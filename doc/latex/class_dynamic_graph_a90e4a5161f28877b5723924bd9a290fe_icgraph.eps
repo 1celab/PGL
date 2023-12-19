@@ -1,0 +1,469 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: Graphviz version 2.20.2 (Tue Mar  2 21:46:26 UTC 2010)
+%%For: (michai) Panagiotis Michail,,,
+%%Title: G
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 740 146
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 704 110 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% Node1
+gsave
+0.000 0.000 0.749 nodecolor
+newpath 0 19 moveto
+0 41 lineto
+124 41 lineto
+124 19 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 0 19 moveto
+0 41 lineto
+124 41 lineto
+124 19 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+8 28 moveto 108 (DynamicGraph::hasEdge) alignedtext
+grestore
+% Node2
+gsave
+[ /Rect [ 160 39 326 61 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($class_dynamic_graph.html#a1b007b348fca01228dedc6bf93e14e70) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 1.000 nodecolor
+newpath 160 39 moveto
+160 61 lineto
+326 61 lineto
+326 39 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 160 39 moveto
+160 61 lineto
+326 61 lineto
+326 39 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+168 48 moveto 150 (DynamicGraph::getEdgeDescriptor) alignedtext
+grestore
+% Node1->Node2
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 134 38 moveto
+142 39 151 40 160 41 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 134.3 34.51 moveto
+124 37 lineto
+133.6 41.48 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 134.3 34.51 moveto
+124 37 lineto
+133.6 41.48 lineto
+closepath stroke
+grestore
+% Node6
+gsave
+[ /Rect [ 379 0 511 22 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($class_dynamic_graph.html#ab779220d756b42794b03e3176e95bd58) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 1.000 nodecolor
+newpath 379 0 moveto
+379 22 lineto
+511 22 lineto
+511 0 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 379 0 moveto
+379 22 lineto
+511 22 lineto
+511 0 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+387 9 moveto 116 (DynamicGraph::insertEdge) alignedtext
+grestore
+% Node1->Node6
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 134 27 moveto
+205 23 310 18 379 14 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 134 23.5 moveto
+124 27 lineto
+134 30.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 134 23.5 moveto
+124 27 lineto
+134 30.5 lineto
+closepath stroke
+grestore
+% Node3
+gsave
+[ /Rect [ 362 80 528 102 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($class_dynamic_graph.html#a83a9c51df95e5e3ef353b64f58781f00) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 1.000 nodecolor
+newpath 362 80 moveto
+362 102 lineto
+528 102 lineto
+528 80 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 362 80 moveto
+362 102 lineto
+528 102 lineto
+528 80 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+370 89 moveto 150 (DynamicGraph::getEdgeDescriptor) alignedtext
+grestore
+% Node2->Node3
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 307 63 moveto
+334 69 365 75 391 80 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 307.49 59.53 moveto
+297 61 lineto
+306.12 66.39 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 307.49 59.53 moveto
+297 61 lineto
+306.12 66.39 lineto
+closepath stroke
+grestore
+% Node4
+gsave
+[ /Rect [ 366 40 524 62 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($class_dynamic_graph.html#af9c2a597b80be5d539b085eb926ffec9) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 1.000 nodecolor
+newpath 366 40 moveto
+366 62 lineto
+525 62 lineto
+525 40 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 366 40 moveto
+366 62 lineto
+525 62 lineto
+525 40 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+373.5 49 moveto 143 (DynamicGraph::hasValidInEdges) alignedtext
+grestore
+% Node2->Node4
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 336 50 moveto
+346 50 356 50 366 51 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 336 46.5 moveto
+326 50 lineto
+336 53.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 336 46.5 moveto
+326 50 lineto
+336 53.5 lineto
+closepath stroke
+grestore
+% Node2->Node6
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 310 37 moveto
+335 32 363 26 387 22 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 309.12 33.61 moveto
+300 39 lineto
+310.49 40.47 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 309.12 33.61 moveto
+300 39 lineto
+310.49 40.47 lineto
+closepath stroke
+grestore
+% Node5
+gsave
+[ /Rect [ 564 40 696 62 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($class_dynamic_graph.html#aaf6cb65860223b369ca8a07fb59806cc) >>
+  /Subtype /Link
+/ANN pdfmark
+0.000 0.000 1.000 nodecolor
+newpath 564 40 moveto
+564 62 lineto
+696 62 lineto
+696 40 lineto
+closepath fill
+1 setlinewidth
+filled
+0.000 0.000 0.000 nodecolor
+newpath 564 40 moveto
+564 62 lineto
+696 62 lineto
+696 40 lineto
+closepath stroke
+0.000 0.000 0.000 nodecolor
+10 /FreeSans set_font
+572 49 moveto 116 (DynamicGraph::eraseNode) alignedtext
+grestore
+% Node4->Node5
+gsave
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 535 51 moveto
+545 51 554 51 564 51 curveto
+stroke
+0.667 0.776 0.439 edgecolor
+newpath 535 47.5 moveto
+525 51 lineto
+535 54.5 lineto
+closepath fill
+1 setlinewidth
+solid
+0.667 0.776 0.439 edgecolor
+newpath 535 47.5 moveto
+525 51 lineto
+535 54.5 lineto
+closepath stroke
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 740 146
+end
+restore
+%%EOF

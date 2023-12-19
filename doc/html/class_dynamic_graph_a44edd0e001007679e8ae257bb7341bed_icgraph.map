@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_dynamic_graph.html#a6e135b79a187771dfde069b5277b1f88" title="Returns an iterator to an outgoing edge." alt="" coords="204,5,407,35"/>
+<area shape="rect" href="$class_dynamic_graph.html#a67dcf2352cfd2eb25141301f4362e88f" title="Checks if an edge exists in the graph." alt="" coords="223,59,388,88"/>
+</map>

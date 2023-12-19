@@ -1,0 +1,774 @@
+\hypertarget{class_dynamic_graph}{
+\section{DynamicGraph$<$ GraphImplementation, Vtype, Etype $>$ Class Template Reference}
+\label{class_dynamic_graph}\index{DynamicGraph@{DynamicGraph}}
+}
+
+
+A dynamic graph type.  
+
+
+
+
+{\ttfamily \#include $<$dynamicGraph.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+EdgeIterator \hyperlink{class_dynamic_graph_af82c60cd82a12a965679d38d410e33f0}{beginEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the first outgoing edge of a node. \item\end{DoxyCompactList}\item 
+InEdgeIterator \hyperlink{class_dynamic_graph_a56f09cd0f91aa2b35e28bbb3cd0568a4}{beginInEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the first incoming edge of a node. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a4ca30c1f555cc535d47243562ffbc7ae}{beginNodes} () const 
+\begin{DoxyCompactList}\small\item\em Returns the first node of the graph. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a38e3b1c0ba0d147fabffc3b8cbe0585b}{chooseNode} () const 
+\begin{DoxyCompactList}\small\item\em Returns the random node. \item\end{DoxyCompactList}\item 
+\hypertarget{class_dynamic_graph_a97b50b2b89d25dd548068818bef6fba3}{
+void \hyperlink{class_dynamic_graph_a97b50b2b89d25dd548068818bef6fba3}{clear} ()}
+\label{class_dynamic_graph_a97b50b2b89d25dd548068818bef6fba3}
+
+\begin{DoxyCompactList}\small\item\em Clears the graph, removes all nodes and edges. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_a1cd46c594141888b39788aa2096c5e3c}{degree} (NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the degree of a node (number of outgoing and incoming edges). \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_a7dabd7e0a75dfff8aba6a80f522886f4}{edgeExists} (const EdgeDescriptor \&descriptor)
+\begin{DoxyCompactList}\small\item\em Checks if an edge exists. \item\end{DoxyCompactList}\item 
+EdgeIterator \hyperlink{class_dynamic_graph_a71a4d1b575bcccf1a189bc83ab3d1373}{endEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the end to the container of the edges of a node. \item\end{DoxyCompactList}\item 
+InEdgeIterator \hyperlink{class_dynamic_graph_a4c3d5c37c993efd3a1e91b80e2323635}{endInEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the end to the container of the incoming edge of a node. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_aad1f2b2f345476a1abe94c2f4dc45a9c}{endNodes} () const 
+\begin{DoxyCompactList}\small\item\em Returns the end to the container of the nodes. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_af648cec2163d1f7c5e8da88bf389eb02}{eraseEdge} (EdgeDescriptor descriptor)
+\begin{DoxyCompactList}\small\item\em Erases an edge from the graph. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_aaf6cb65860223b369ca8a07fb59806cc}{eraseNode} (NodeDescriptor descriptor)
+\begin{DoxyCompactList}\small\item\em Erases a node from the graph. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_ae71e8643f129b0ffffe5cc8e6878fd2f}{generateFrom} (GraphGenerator$<$ \hyperlink{class_dynamic_graph}{DynamicGraph} $>$ $\ast$generator)
+\begin{DoxyCompactList}\small\item\em Populates the graph from a generator. \item\end{DoxyCompactList}\item 
+EdgeDescriptor \hyperlink{class_dynamic_graph_a1b007b348fca01228dedc6bf93e14e70}{getEdgeDescriptor} (const NodeDescriptor \&uD, const NodeDescriptor \&vD)
+\begin{DoxyCompactList}\small\item\em Returns the descriptor of an edge (u,v). \item\end{DoxyCompactList}\item 
+EdgeDescriptor \hyperlink{class_dynamic_graph_a83a9c51df95e5e3ef353b64f58781f00}{getEdgeDescriptor} (const NodeIterator \&u, const NodeIterator \&v)
+\begin{DoxyCompactList}\small\item\em Returns the descriptor of an edge (u,v). \item\end{DoxyCompactList}\item 
+EdgeDescriptor \hyperlink{class_dynamic_graph_afb6635b9e02a5b74797a8e9349b4e022}{getEdgeDescriptor} (const EdgeIterator \&e)
+\begin{DoxyCompactList}\small\item\em Returns the descriptor of an outgoing edge. \item\end{DoxyCompactList}\item 
+EdgeDescriptor \hyperlink{class_dynamic_graph_ab0eb6d1bc17887c04540e47411430751}{getEdgeDescriptor} (const InEdgeIterator \&k)
+\begin{DoxyCompactList}\small\item\em Returns the descriptor of an incoming edge. \item\end{DoxyCompactList}\item 
+EdgeIterator \hyperlink{class_dynamic_graph_a0f7fe68985342f5dbba1a5b824f2ac2c}{getEdgeIterator} (const EdgeDescriptor \&descriptor)
+\begin{DoxyCompactList}\small\item\em Returns an iterator to an outgoing edge. \item\end{DoxyCompactList}\item 
+EdgeIterator \hyperlink{class_dynamic_graph_a6e135b79a187771dfde069b5277b1f88}{getEdgeIterator} (const NodeIterator \&u, const NodeIterator \&v) const 
+\begin{DoxyCompactList}\small\item\em Returns an iterator to an outgoing edge. \item\end{DoxyCompactList}\item 
+EdgeIterator \hyperlink{class_dynamic_graph_a396484a350c5e3161720e0ce60877214}{getEdgeIterator} (const InEdgeIterator \&k) const 
+\begin{DoxyCompactList}\small\item\em Returns an iterator to an outgoing edge. \item\end{DoxyCompactList}\item 
+InEdgeIterator \hyperlink{class_dynamic_graph_a35a595f7a88c5a21330f593dcdedad66}{getInEdgeIterator} (const EdgeIterator \&e) const 
+\begin{DoxyCompactList}\small\item\em Returns an iterator to an incoming edge. \item\end{DoxyCompactList}\item 
+NodeDescriptor \hyperlink{class_dynamic_graph_a12266de606b1d32d76aeb58458d033dd}{getNodeDescriptor} (const NodeIterator \&u)
+\begin{DoxyCompactList}\small\item\em Returns the descriptor of a node. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_aa473c6480ec8ac2fa14680c8953b10e0}{getNodeIterator} (const NodeDescriptor \&descriptor)
+\begin{DoxyCompactList}\small\item\em Returns iterator to a node. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a4ea070c2f0f4f667dd4f6c518644c8ae}{getNodeIterator} (const void $\ast$descriptor)
+\begin{DoxyCompactList}\small\item\em Returns iterator to a node. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_a3a57f9cd640cba12352a22e0e4410654}{getNumEdges} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of edges in the graph. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_ac2a52e7af5a154a54282f816bf9af54e}{getNumNodes} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes in the graph. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_ad1e501790b0784cd925f766ca4ab6e0c}{getRelativePosition} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the relative position of a node as an id in the range \mbox{[}0, numNodes-\/1\mbox{]}. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_a90e4a5161f28877b5723924bd9a290fe}{hasEdge} (const NodeDescriptor \&uD, const NodeDescriptor \&vD)
+\begin{DoxyCompactList}\small\item\em Checks if an edge exists in the graph. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_a67dcf2352cfd2eb25141301f4362e88f}{hasEdge} (const NodeIterator \&u, const NodeIterator \&v)
+\begin{DoxyCompactList}\small\item\em Checks if an edge exists in the graph. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_a6adc3ab6d95d3d2e6c8ca8d3b4238a39}{hasEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Checks if a node has outgoing edges. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_a4d753757a2a83708ddaabee45318c523}{hasInEdges} (const NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Checks if a node has incoming edges. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_ab5c40bda53d5e3cd1e03078a64982384}{hasNode} (const NodeDescriptor \&descriptor)
+\begin{DoxyCompactList}\small\item\em Checks if a node exists in the graph. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_dynamic_graph_af9c2a597b80be5d539b085eb926ffec9}{hasValidInEdges} ()
+\begin{DoxyCompactList}\small\item\em Checks if all outgoing edges are paired to an incoming edge each. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_adf611f51b16f0fd3d2569c97ce966ff8}{indeg} (NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the in degree of a node (number of incoming edges). \item\end{DoxyCompactList}\item 
+EdgeDescriptor \hyperlink{class_dynamic_graph_ab779220d756b42794b03e3176e95bd58}{insertEdge} (const NodeDescriptor \&uD, const NodeDescriptor \&vD)
+\begin{DoxyCompactList}\small\item\em Inserts an edge in the graph. \item\end{DoxyCompactList}\item 
+NodeDescriptor \hyperlink{class_dynamic_graph_abffc8e608d4e7aaa6f662085adb40dbd}{insertNode} ()
+\begin{DoxyCompactList}\small\item\em Inserts a node in the graph. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_a2f637804e11d0dd69398ef2b1b1c19ee}{memUsage} () const 
+\begin{DoxyCompactList}\small\item\em Returns the memory usage in bytes. \item\end{DoxyCompactList}\item 
+NodeDescriptor \hyperlink{class_dynamic_graph_a1ecc111c5aa2edcb9f6e545fff8c7b18}{nilNodeDescriptor} () const 
+\begin{DoxyCompactList}\small\item\em Returns an empty node descriptor. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_dynamic_graph_af3dcd9a6734363cc7bb0b252dad92659}{outdeg} (NodeIterator \&u) const 
+\begin{DoxyCompactList}\small\item\em Returns the degree of a node (number of outgoing edges). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_aa854b347bbc9bacc14c916831f7f8da3}{printInternalDot} (const std::string \&filename)
+\begin{DoxyCompactList}\small\item\em Prints a dot representation of the graph to a file. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_a3c4f4aef60a6c59ca84d266525f8efda}{read} (GraphReader$<$ \hyperlink{class_dynamic_graph}{DynamicGraph} $>$ $\ast$reader)
+\begin{DoxyCompactList}\small\item\em Populates the graph from a reader. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_a8d0cc3347df5c1e93400c789e83f7dd6}{reserve} (const SizeType \&numNodes, const SizeType \&numEdges)
+\begin{DoxyCompactList}\small\item\em Reserves memory for the graph. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a33514500857b840c200300df52bfc38c}{source} (EdgeIterator \&e) const 
+\begin{DoxyCompactList}\small\item\em Returns the source node of an outgoing edge. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_ad402237d152a83fe948f8891a2ad1316}{source} (InEdgeIterator \&k) const 
+\begin{DoxyCompactList}\small\item\em Returns the source node of an incoming edge. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a44edd0e001007679e8ae257bb7341bed}{target} (EdgeIterator \&e) const 
+\begin{DoxyCompactList}\small\item\em Returns the target node of an outgoingedge. \item\end{DoxyCompactList}\item 
+NodeIterator \hyperlink{class_dynamic_graph_a0d6d44c1f95ee743e57164afd68954fc}{target} (InEdgeIterator \&k) const 
+\begin{DoxyCompactList}\small\item\em Returns the target node of an incoming edge. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dynamic_graph_a10d7f8456bc3a9247ea9f3cc1aae63b0}{write} (GraphWriter$<$ \hyperlink{class_dynamic_graph}{DynamicGraph} $>$ $\ast$writer)
+\begin{DoxyCompactList}\small\item\em Outputs the graph to a writer. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype = DefaultGraphItem, typename Etype = DefaultGraphItem$>$ class DynamicGraph$<$ GraphImplementation, Vtype, Etype $>$}
+
+A dynamic graph type. 
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em GraphImplementation}]The underlying graph implementation to use. Available implementations are 'PackedMemoryArrayImpl' and 'AdjacencyListImpl' \item[{\em Vtype}]The data to associate with the nodes. It must be a class or struct \item[{\em Etype}]The data to associate with the edges. It must be a class or struct \end{DoxyTemplParams}
+\begin{DoxyAuthor}{Author}
+Panos Michail 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dynamic_graph_af82c60cd82a12a965679d38d410e33f0}{
+\index{DynamicGraph@{DynamicGraph}!beginEdges@{beginEdges}}
+\index{beginEdges@{beginEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{beginEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::beginEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_af82c60cd82a12a965679d38d410e33f0}
+
+
+Returns the first outgoing edge of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]node\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the first outgoing edge of a node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a56f09cd0f91aa2b35e28bbb3cd0568a4}{
+\index{DynamicGraph@{DynamicGraph}!beginInEdges@{beginInEdges}}
+\index{beginInEdges@{beginInEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{beginInEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ InEdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::beginInEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a56f09cd0f91aa2b35e28bbb3cd0568a4}
+
+
+Returns the first incoming edge of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]node\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the first incoming edge of a node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a4ca30c1f555cc535d47243562ffbc7ae}{
+\index{DynamicGraph@{DynamicGraph}!beginNodes@{beginNodes}}
+\index{beginNodes@{beginNodes}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{beginNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::beginNodes () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a4ca30c1f555cc535d47243562ffbc7ae}
+
+
+Returns the first node of the graph. 
+
+\begin{DoxyReturn}{Returns}
+An iterator to the first node of the graph 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a38e3b1c0ba0d147fabffc3b8cbe0585b}{
+\index{DynamicGraph@{DynamicGraph}!chooseNode@{chooseNode}}
+\index{chooseNode@{chooseNode}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{chooseNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::chooseNode () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a38e3b1c0ba0d147fabffc3b8cbe0585b}
+
+
+Returns the random node. 
+
+\begin{DoxyReturn}{Returns}
+A random node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a1cd46c594141888b39788aa2096c5e3c}{
+\index{DynamicGraph@{DynamicGraph}!degree@{degree}}
+\index{degree@{degree}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{degree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::degree (NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a1cd46c594141888b39788aa2096c5e3c}
+
+
+Returns the degree of a node (number of outgoing and incoming edges). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The degree of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a7dabd7e0a75dfff8aba6a80f522886f4}{
+\index{DynamicGraph@{DynamicGraph}!edgeExists@{edgeExists}}
+\index{edgeExists@{edgeExists}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{edgeExists}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::edgeExists (const EdgeDescriptor \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a7dabd7e0a75dfff8aba6a80f522886f4}
+
+
+Checks if an edge exists. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]The edge descriptor \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if e exists in the graph, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a71a4d1b575bcccf1a189bc83ab3d1373}{
+\index{DynamicGraph@{DynamicGraph}!endEdges@{endEdges}}
+\index{endEdges@{endEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{endEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::endEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a71a4d1b575bcccf1a189bc83ab3d1373}
+
+
+Returns the end to the container of the edges of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the past-\/the-\/end edge of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a4c3d5c37c993efd3a1e91b80e2323635}{
+\index{DynamicGraph@{DynamicGraph}!endInEdges@{endInEdges}}
+\index{endInEdges@{endInEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{endInEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ InEdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::endInEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a4c3d5c37c993efd3a1e91b80e2323635}
+
+
+Returns the end to the container of the incoming edge of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the past-\/the-\/end incoming edge of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_aad1f2b2f345476a1abe94c2f4dc45a9c}{
+\index{DynamicGraph@{DynamicGraph}!endNodes@{endNodes}}
+\index{endNodes@{endNodes}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{endNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::endNodes () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_aad1f2b2f345476a1abe94c2f4dc45a9c}
+
+
+Returns the end to the container of the nodes. 
+
+\begin{DoxyReturn}{Returns}
+An iterator to the past-\/the-\/end node of the graph 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_af648cec2163d1f7c5e8da88bf389eb02}{
+\index{DynamicGraph@{DynamicGraph}!eraseEdge@{eraseEdge}}
+\index{eraseEdge@{eraseEdge}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{eraseEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::eraseEdge (EdgeDescriptor {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_af648cec2163d1f7c5e8da88bf389eb02}
+
+
+Erases an edge from the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor of the edge to be erased \end{DoxyParams}
+\hypertarget{class_dynamic_graph_aaf6cb65860223b369ca8a07fb59806cc}{
+\index{DynamicGraph@{DynamicGraph}!eraseNode@{eraseNode}}
+\index{eraseNode@{eraseNode}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{eraseNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::eraseNode (NodeDescriptor {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_aaf6cb65860223b369ca8a07fb59806cc}
+
+
+Erases a node from the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor of the node to be erased \end{DoxyParams}
+\hypertarget{class_dynamic_graph_ae71e8643f129b0ffffe5cc8e6878fd2f}{
+\index{DynamicGraph@{DynamicGraph}!generateFrom@{generateFrom}}
+\index{generateFrom@{generateFrom}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{generateFrom}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::generateFrom (GraphGenerator$<$ {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$ $>$ $\ast$ {\em generator})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ae71e8643f129b0ffffe5cc8e6878fd2f}
+
+
+Populates the graph from a generator. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em generator}]A graph generator \end{DoxyParams}
+\hypertarget{class_dynamic_graph_ab0eb6d1bc17887c04540e47411430751}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeDescriptor@{getEdgeDescriptor}}
+\index{getEdgeDescriptor@{getEdgeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeDescriptor (const InEdgeIterator \& {\em k})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ab0eb6d1bc17887c04540e47411430751}
+
+
+Returns the descriptor of an incoming edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em k}]The incoming edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_afb6635b9e02a5b74797a8e9349b4e022}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeDescriptor@{getEdgeDescriptor}}
+\index{getEdgeDescriptor@{getEdgeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeDescriptor (const EdgeIterator \& {\em e})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_afb6635b9e02a5b74797a8e9349b4e022}
+
+
+Returns the descriptor of an outgoing edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]The outgoing edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a83a9c51df95e5e3ef353b64f58781f00}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeDescriptor@{getEdgeDescriptor}}
+\index{getEdgeDescriptor@{getEdgeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeDescriptor (const NodeIterator \& {\em u}, \/  const NodeIterator \& {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a83a9c51df95e5e3ef353b64f58781f00}
+
+
+Returns the descriptor of an edge (u,v). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The source node of the edge \item[{\em v}]The target node of the edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the edge between u and v 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a1b007b348fca01228dedc6bf93e14e70}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeDescriptor@{getEdgeDescriptor}}
+\index{getEdgeDescriptor@{getEdgeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeDescriptor (const NodeDescriptor \& {\em uD}, \/  const NodeDescriptor \& {\em vD})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a1b007b348fca01228dedc6bf93e14e70}
+
+
+Returns the descriptor of an edge (u,v). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uD}]The descritpor of the source node of the edge \item[{\em vD}]The descritpor of the target node of the edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the edge between u and v 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a396484a350c5e3161720e0ce60877214}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeIterator@{getEdgeIterator}}
+\index{getEdgeIterator@{getEdgeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeIterator (const InEdgeIterator \& {\em k}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a396484a350c5e3161720e0ce60877214}
+
+
+Returns an iterator to an outgoing edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]An iterator to an incoming edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the corresponding outgoing edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a6e135b79a187771dfde069b5277b1f88}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeIterator@{getEdgeIterator}}
+\index{getEdgeIterator@{getEdgeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeIterator (const NodeIterator \& {\em u}, \/  const NodeIterator \& {\em v}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a6e135b79a187771dfde069b5277b1f88}
+
+
+Returns an iterator to an outgoing edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The source node of the edge \item[{\em v}]The target node of the edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the outgoing edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a0f7fe68985342f5dbba1a5b824f2ac2c}{
+\index{DynamicGraph@{DynamicGraph}!getEdgeIterator@{getEdgeIterator}}
+\index{getEdgeIterator@{getEdgeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getEdgeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getEdgeIterator (const EdgeDescriptor \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a0f7fe68985342f5dbba1a5b824f2ac2c}
+
+
+Returns an iterator to an outgoing edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor of the edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the outgoing edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a35a595f7a88c5a21330f593dcdedad66}{
+\index{DynamicGraph@{DynamicGraph}!getInEdgeIterator@{getInEdgeIterator}}
+\index{getInEdgeIterator@{getInEdgeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getInEdgeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ InEdgeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getInEdgeIterator (const EdgeIterator \& {\em e}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a35a595f7a88c5a21330f593dcdedad66}
+
+
+Returns an iterator to an incoming edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]An iterator an outgoing edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the corresponding incoming edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a12266de606b1d32d76aeb58458d033dd}{
+\index{DynamicGraph@{DynamicGraph}!getNodeDescriptor@{getNodeDescriptor}}
+\index{getNodeDescriptor@{getNodeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getNodeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getNodeDescriptor (const NodeIterator \& {\em u})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a12266de606b1d32d76aeb58458d033dd}
+
+
+Returns the descriptor of a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a4ea070c2f0f4f667dd4f6c518644c8ae}{
+\index{DynamicGraph@{DynamicGraph}!getNodeIterator@{getNodeIterator}}
+\index{getNodeIterator@{getNodeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getNodeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getNodeIterator (const void $\ast$ {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a4ea070c2f0f4f667dd4f6c518644c8ae}
+
+
+Returns iterator to a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor of the node as a memory address \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_aa473c6480ec8ac2fa14680c8953b10e0}{
+\index{DynamicGraph@{DynamicGraph}!getNodeIterator@{getNodeIterator}}
+\index{getNodeIterator@{getNodeIterator}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getNodeIterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getNodeIterator (const NodeDescriptor \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_aa473c6480ec8ac2fa14680c8953b10e0}
+
+
+Returns iterator to a node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The descriptor of the node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An iterator to the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a3a57f9cd640cba12352a22e0e4410654}{
+\index{DynamicGraph@{DynamicGraph}!getNumEdges@{getNumEdges}}
+\index{getNumEdges@{getNumEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getNumEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getNumEdges () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a3a57f9cd640cba12352a22e0e4410654}
+
+
+Returns the number of edges in the graph. 
+
+\begin{DoxyReturn}{Returns}
+The number of edges in the graph 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_ac2a52e7af5a154a54282f816bf9af54e}{
+\index{DynamicGraph@{DynamicGraph}!getNumNodes@{getNumNodes}}
+\index{getNumNodes@{getNumNodes}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getNumNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getNumNodes () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ac2a52e7af5a154a54282f816bf9af54e}
+
+
+Returns the number of nodes in the graph. 
+
+\begin{DoxyReturn}{Returns}
+The number of nodes in the graph 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_ad1e501790b0784cd925f766ca4ab6e0c}{
+\index{DynamicGraph@{DynamicGraph}!getRelativePosition@{getRelativePosition}}
+\index{getRelativePosition@{getRelativePosition}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{getRelativePosition}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::getRelativePosition (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ad1e501790b0784cd925f766ca4ab6e0c}
+
+
+Returns the relative position of a node as an id in the range \mbox{[}0, numNodes-\/1\mbox{]}. 
+
+\begin{DoxyReturn}{Returns}
+The relative position of a node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a67dcf2352cfd2eb25141301f4362e88f}{
+\index{DynamicGraph@{DynamicGraph}!hasEdge@{hasEdge}}
+\index{hasEdge@{hasEdge}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasEdge (const NodeIterator \& {\em u}, \/  const NodeIterator \& {\em v})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a67dcf2352cfd2eb25141301f4362e88f}
+
+
+Checks if an edge exists in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The source node \item[{\em v}]The target node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there exists and edge (u,v), false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a90e4a5161f28877b5723924bd9a290fe}{
+\index{DynamicGraph@{DynamicGraph}!hasEdge@{hasEdge}}
+\index{hasEdge@{hasEdge}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasEdge (const NodeDescriptor \& {\em uD}, \/  const NodeDescriptor \& {\em vD})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a90e4a5161f28877b5723924bd9a290fe}
+
+
+Checks if an edge exists in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uD}]The source node descriptor \item[{\em vD}]The target node descriptor \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if there exists and edge (uD,vD), false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a6adc3ab6d95d3d2e6c8ca8d3b4238a39}{
+\index{DynamicGraph@{DynamicGraph}!hasEdges@{hasEdges}}
+\index{hasEdges@{hasEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a6adc3ab6d95d3d2e6c8ca8d3b4238a39}
+
+
+Checks if a node has outgoing edges. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if u has outgoing edges, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a4d753757a2a83708ddaabee45318c523}{
+\index{DynamicGraph@{DynamicGraph}!hasInEdges@{hasInEdges}}
+\index{hasInEdges@{hasInEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasInEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasInEdges (const NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a4d753757a2a83708ddaabee45318c523}
+
+
+Checks if a node has incoming edges. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if u has incoming edges, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_ab5c40bda53d5e3cd1e03078a64982384}{
+\index{DynamicGraph@{DynamicGraph}!hasNode@{hasNode}}
+\index{hasNode@{hasNode}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasNode (const NodeDescriptor \& {\em descriptor})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ab5c40bda53d5e3cd1e03078a64982384}
+
+
+Checks if a node exists in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em descriptor}]The node descriptor \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if u exists in the graph, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_af9c2a597b80be5d539b085eb926ffec9}{
+\index{DynamicGraph@{DynamicGraph}!hasValidInEdges@{hasValidInEdges}}
+\index{hasValidInEdges@{hasValidInEdges}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{hasValidInEdges}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ bool {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::hasValidInEdges ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_af9c2a597b80be5d539b085eb926ffec9}
+
+
+Checks if all outgoing edges are paired to an incoming edge each. 
+
+\begin{DoxyReturn}{Returns}
+True if all outgoing edges are paired to an incoming edge each, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_adf611f51b16f0fd3d2569c97ce966ff8}{
+\index{DynamicGraph@{DynamicGraph}!indeg@{indeg}}
+\index{indeg@{indeg}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{indeg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::indeg (NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_adf611f51b16f0fd3d2569c97ce966ff8}
+
+
+Returns the in degree of a node (number of incoming edges). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The in degree of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_ab779220d756b42794b03e3176e95bd58}{
+\index{DynamicGraph@{DynamicGraph}!insertEdge@{insertEdge}}
+\index{insertEdge@{insertEdge}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{insertEdge}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ EdgeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::insertEdge (const NodeDescriptor \& {\em uD}, \/  const NodeDescriptor \& {\em vD})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ab779220d756b42794b03e3176e95bd58}
+
+
+Inserts an edge in the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em uD}]The descriptor of the source node of the edge \item[{\em vD}]The descriptor of the target node of the edge\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The descriptor of the new edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_abffc8e608d4e7aaa6f662085adb40dbd}{
+\index{DynamicGraph@{DynamicGraph}!insertNode@{insertNode}}
+\index{insertNode@{insertNode}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{insertNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::insertNode ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_abffc8e608d4e7aaa6f662085adb40dbd}
+
+
+Inserts a node in the graph. 
+
+\begin{DoxyReturn}{Returns}
+The descriptor of the new node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a2f637804e11d0dd69398ef2b1b1c19ee}{
+\index{DynamicGraph@{DynamicGraph}!memUsage@{memUsage}}
+\index{memUsage@{memUsage}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{memUsage}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::memUsage () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a2f637804e11d0dd69398ef2b1b1c19ee}
+
+
+Returns the memory usage in bytes. 
+
+\begin{DoxyReturn}{Returns}
+The memory usage in bytes 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a1ecc111c5aa2edcb9f6e545fff8c7b18}{
+\index{DynamicGraph@{DynamicGraph}!nilNodeDescriptor@{nilNodeDescriptor}}
+\index{nilNodeDescriptor@{nilNodeDescriptor}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{nilNodeDescriptor}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeDescriptor {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::nilNodeDescriptor () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a1ecc111c5aa2edcb9f6e545fff8c7b18}
+
+
+Returns an empty node descriptor. 
+
+\begin{DoxyReturn}{Returns}
+An empty node descriptor 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_af3dcd9a6734363cc7bb0b252dad92659}{
+\index{DynamicGraph@{DynamicGraph}!outdeg@{outdeg}}
+\index{outdeg@{outdeg}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{outdeg}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ SizeType {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::outdeg (NodeIterator \& {\em u}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_af3dcd9a6734363cc7bb0b252dad92659}
+
+
+Returns the degree of a node (number of outgoing edges). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em u}]The node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The out degree of the node 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_aa854b347bbc9bacc14c916831f7f8da3}{
+\index{DynamicGraph@{DynamicGraph}!printInternalDot@{printInternalDot}}
+\index{printInternalDot@{printInternalDot}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{printInternalDot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::printInternalDot (const std::string \& {\em filename})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_aa854b347bbc9bacc14c916831f7f8da3}
+
+
+Prints a dot representation of the graph to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em filename}]The output filename \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The target node of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a3c4f4aef60a6c59ca84d266525f8efda}{
+\index{DynamicGraph@{DynamicGraph}!read@{read}}
+\index{read@{read}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::read (GraphReader$<$ {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$ $>$ $\ast$ {\em reader})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a3c4f4aef60a6c59ca84d266525f8efda}
+
+
+Populates the graph from a reader. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em reader}]A graph reader \end{DoxyParams}
+\hypertarget{class_dynamic_graph_a8d0cc3347df5c1e93400c789e83f7dd6}{
+\index{DynamicGraph@{DynamicGraph}!reserve@{reserve}}
+\index{reserve@{reserve}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{reserve}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::reserve (const SizeType \& {\em numNodes}, \/  const SizeType \& {\em numEdges})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a8d0cc3347df5c1e93400c789e83f7dd6}
+
+
+Reserves memory for the graph. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em numNodes}]The expected number of nodes \item[{\em numEdges}]The expected number of edges \end{DoxyParams}
+\hypertarget{class_dynamic_graph_ad402237d152a83fe948f8891a2ad1316}{
+\index{DynamicGraph@{DynamicGraph}!source@{source}}
+\index{source@{source}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::source (InEdgeIterator \& {\em k}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_ad402237d152a83fe948f8891a2ad1316}
+
+
+Returns the source node of an incoming edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em k}]The incoming edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The source node of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a33514500857b840c200300df52bfc38c}{
+\index{DynamicGraph@{DynamicGraph}!source@{source}}
+\index{source@{source}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{source}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::source (EdgeIterator \& {\em e}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a33514500857b840c200300df52bfc38c}
+
+
+Returns the source node of an outgoing edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]The outgoing edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The source node of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a0d6d44c1f95ee743e57164afd68954fc}{
+\index{DynamicGraph@{DynamicGraph}!target@{target}}
+\index{target@{target}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::target (InEdgeIterator \& {\em k}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a0d6d44c1f95ee743e57164afd68954fc}
+
+
+Returns the target node of an incoming edge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em k}]The incoming edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The target node of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a44edd0e001007679e8ae257bb7341bed}{
+\index{DynamicGraph@{DynamicGraph}!target@{target}}
+\index{target@{target}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{target}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ NodeIterator {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::target (EdgeIterator \& {\em e}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a44edd0e001007679e8ae257bb7341bed}
+
+
+Returns the target node of an outgoingedge. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em e}]The outgoing edge \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The target node of the edge 
+\end{DoxyReturn}
+\hypertarget{class_dynamic_graph_a10d7f8456bc3a9247ea9f3cc1aae63b0}{
+\index{DynamicGraph@{DynamicGraph}!write@{write}}
+\index{write@{write}!DynamicGraph@{DynamicGraph}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}template$<$template$<$ typename vtype, typename etype $>$ class GraphImplementation, typename Vtype  = DefaultGraphItem, typename Etype  = DefaultGraphItem$>$ void {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$::write (GraphWriter$<$ {\bf DynamicGraph}$<$ GraphImplementation, Vtype, Etype $>$ $>$ $\ast$ {\em writer})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dynamic_graph_a10d7f8456bc3a9247ea9f3cc1aae63b0}
+
+
+Outputs the graph to a writer. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em writer}]A graph writer \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/dynamicGraph.h\end{DoxyCompactItemize}

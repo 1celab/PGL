@@ -1,0 +1,179 @@
+\hypertarget{class_complete_binary_tree}{
+\section{CompleteBinaryTree$<$ DataType, StorageStrategy $>$ Class Template Reference}
+\label{class_complete_binary_tree}\index{CompleteBinaryTree@{CompleteBinaryTree}}
+}
+
+
+A complete binary tree.  
+
+
+
+
+{\ttfamily \#include $<$completeBinaryTree.h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_complete_binary_tree_1_1_node}{Node}
+\begin{DoxyCompactList}\small\item\em A node iterator of a \hyperlink{class_complete_binary_tree}{CompleteBinaryTree}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_complete_binary_tree_ab29b9b403e94cf4fa13ad62f09709540}{CompleteBinaryTree} (const SizeType \&height=0, const DataType \&defaultValue=DataType(0))
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_aa30d3bdf70bbe605eb1177d0117ca011}{
+\hyperlink{class_complete_binary_tree_aa30d3bdf70bbe605eb1177d0117ca011}{$\sim$CompleteBinaryTree} ()}
+\label{class_complete_binary_tree_aa30d3bdf70bbe605eb1177d0117ca011}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_acbbf692497d6e4d4cb03ca9c81f74291}{
+void \hyperlink{class_complete_binary_tree_acbbf692497d6e4d4cb03ca9c81f74291}{decreaseHeight} ()}
+\label{class_complete_binary_tree_acbbf692497d6e4d4cb03ca9c81f74291}
+
+\begin{DoxyCompactList}\small\item\em Remove the last level of the tree. \item\end{DoxyCompactList}\item 
+const SizeType \& \hyperlink{class_complete_binary_tree_a2b51ae89ab242c2ce7de8ec90b963b34}{getHeight} () const 
+\begin{DoxyCompactList}\small\item\em Returns the height of the tree. \item\end{DoxyCompactList}\item 
+const SizeType \& \hyperlink{class_complete_binary_tree_a017457f2cc1b4fe7d6ffd8f9df4d2166}{getNumNodes} () const 
+\begin{DoxyCompactList}\small\item\em Returns the number of nodes of the tree. \item\end{DoxyCompactList}\item 
+\hyperlink{class_complete_binary_tree_1_1_node}{Node} \hyperlink{class_complete_binary_tree_a6238107a4a2cd42daf790d3350c30bf6}{getRootNode} ()
+\begin{DoxyCompactList}\small\item\em Returns the root node. \item\end{DoxyCompactList}\item 
+\hyperlink{class_complete_binary_tree_1_1_node}{Node} $\ast$ \hyperlink{class_complete_binary_tree_a0c56d34b6281450f6e31b1b745dd2879}{getRootPointer} () const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the root node. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_abef64512adb3b9ff4b1bb15b67dcf22b}{
+void \hyperlink{class_complete_binary_tree_abef64512adb3b9ff4b1bb15b67dcf22b}{increaseHeight} ()}
+\label{class_complete_binary_tree_abef64512adb3b9ff4b1bb15b67dcf22b}
+
+\begin{DoxyCompactList}\small\item\em Add one more level to the tree. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_complete_binary_tree_a5fa6e7c4fa1985f79ce83361384e69ea}{printGraphviz} (std::ostream \&out, const std::string \&prefix=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Prints the tree in Graphviz format. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_complete_binary_tree_a4d467abffbf4a782a6415b0fd1196399}{
+DataType $\ast$ \hyperlink{class_complete_binary_tree_a4d467abffbf4a782a6415b0fd1196399}{m\_\-pool}}
+\label{class_complete_binary_tree_a4d467abffbf4a782a6415b0fd1196399}
+
+\begin{DoxyCompactList}\small\item\em Array that represents the tree and stores the node data. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_complete_binary_tree_aeedb9377bd834adf4c84cdfc628048da}{m\_\-height}
+\begin{DoxyCompactList}\small\item\em Array that represents the tree and stores the \hyperlink{class_complete_binary_tree_1_1_node}{Node} data. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_afe30a31b80041d0eb0bb5544b638641b}{
+SizeType \hyperlink{class_complete_binary_tree_afe30a31b80041d0eb0bb5544b638641b}{m\_\-numNodes}}
+\label{class_complete_binary_tree_afe30a31b80041d0eb0bb5544b638641b}
+
+\begin{DoxyCompactList}\small\item\em The number of nodes in the tree. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_a830424f29bfab1f7ffe064d12b8ed72b}{
+DataType \hyperlink{class_complete_binary_tree_a830424f29bfab1f7ffe064d12b8ed72b}{m\_\-defaultValue}}
+\label{class_complete_binary_tree_a830424f29bfab1f7ffe064d12b8ed72b}
+
+\begin{DoxyCompactList}\small\item\em The default data for nodes. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_a68a546f8b34d808eb2efd281a31dac9f}{
+StorageScheme $\ast$ \hyperlink{class_complete_binary_tree_a68a546f8b34d808eb2efd281a31dac9f}{m\_\-storage}}
+\label{class_complete_binary_tree_a68a546f8b34d808eb2efd281a31dac9f}
+
+\begin{DoxyCompactList}\small\item\em The storage scheme item. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ class CompleteBinaryTree$<$ DataType, StorageStrategy $>$}
+
+A complete binary tree. 
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em DataType}]The data to associate with the nodes. It must be a class or struct \item[{\em StorageStrategy}]The underlying storage implementation to use. Available implementations are 'HeapStorage', 'ExplicitHeapStorage', 'VebStorage', 'ExplicitVebStorage', 'ExplicitPowerVebStorage' and 'SplitStorage' \end{DoxyTemplParams}
+\begin{DoxyAuthor}{Author}
+Panos Michail 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_complete_binary_tree_ab29b9b403e94cf4fa13ad62f09709540}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!CompleteBinaryTree@{CompleteBinaryTree}}
+\index{CompleteBinaryTree@{CompleteBinaryTree}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{CompleteBinaryTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::{\bf CompleteBinaryTree} (const SizeType \& {\em height} = {\ttfamily 0}, \/  const DataType \& {\em defaultValue} = {\ttfamily DataType(0)})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_ab29b9b403e94cf4fa13ad62f09709540}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em height}]The tree height ( maximum distance from root, i.e. a tree with one node has height=0) \item[{\em defaultValue}]The default value to initiallize the nodes' data \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_complete_binary_tree_a2b51ae89ab242c2ce7de8ec90b963b34}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{getHeight}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ const SizeType\& {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::getHeight () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_a2b51ae89ab242c2ce7de8ec90b963b34}
+
+
+Returns the height of the tree. 
+
+\begin{DoxyReturn}{Returns}
+The height of the tree 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_a017457f2cc1b4fe7d6ffd8f9df4d2166}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!getNumNodes@{getNumNodes}}
+\index{getNumNodes@{getNumNodes}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{getNumNodes}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ const SizeType\& {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::getNumNodes () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_a017457f2cc1b4fe7d6ffd8f9df4d2166}
+
+
+Returns the number of nodes of the tree. 
+
+\begin{DoxyReturn}{Returns}
+The number of nodes of the tree 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_a6238107a4a2cd42daf790d3350c30bf6}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!getRootNode@{getRootNode}}
+\index{getRootNode@{getRootNode}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{getRootNode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ {\bf Node} {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::getRootNode ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_a6238107a4a2cd42daf790d3350c30bf6}
+
+
+Returns the root node. 
+
+\begin{DoxyReturn}{Returns}
+The root node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_a0c56d34b6281450f6e31b1b745dd2879}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!getRootPointer@{getRootPointer}}
+\index{getRootPointer@{getRootPointer}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{getRootPointer}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ {\bf Node}$\ast$ {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::getRootPointer () const}}
+\label{class_complete_binary_tree_a0c56d34b6281450f6e31b1b745dd2879}
+
+
+Returns a pointer to the root node. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the root node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_a5fa6e7c4fa1985f79ce83361384e69ea}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!printGraphviz@{printGraphviz}}
+\index{printGraphviz@{printGraphviz}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{printGraphviz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ void {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::printGraphviz (std::ostream \& {\em out}, \/  const std::string \& {\em prefix} = {\ttfamily \char`\"{}\char`\"{}})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_a5fa6e7c4fa1985f79ce83361384e69ea}
+
+
+Prints the tree in Graphviz format. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em out}]The output stream \item[{\em prefix}]An optional prefix to the node names in the Graphviz format \end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_complete_binary_tree_aeedb9377bd834adf4c84cdfc628048da}{
+\index{CompleteBinaryTree@{CompleteBinaryTree}!m\_\-height@{m\_\-height}}
+\index{m\_\-height@{m\_\-height}!CompleteBinaryTree@{CompleteBinaryTree}}
+\subsubsection[{m\_\-height}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ SizeType {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::{\bf m\_\-height}\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{class_complete_binary_tree_aeedb9377bd834adf4c84cdfc628048da}
+
+
+Array that represents the tree and stores the \hyperlink{class_complete_binary_tree_1_1_node}{Node} data. 
+
+The tree height 
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/completeBinaryTree.h\end{DoxyCompactItemize}

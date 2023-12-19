@@ -1,0 +1,151 @@
+\hypertarget{class_packed_memory_array_helper}{
+\section{PackedMemoryArrayHelper$<$ DataType $>$ Class Template Reference}
+\label{class_packed_memory_array_helper}\index{PackedMemoryArrayHelper@{PackedMemoryArrayHelper}}
+}
+
+
+Collaboration diagram for PackedMemoryArrayHelper$<$ DataType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_packed_memory_array_helper__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_memory_array_helper_af2cb70424ab029a8400464a5d82482ba}{
+typedef \hyperlink{class_complete_binary_tree}{CompleteBinaryTree}$<$ \hyperlink{class_pma_tree_data}{PmaTreeData}, \hyperlink{class_explicit_veb_storage}{ExplicitVebStorage} $>$ {\bfseries TreeType}}
+\label{class_packed_memory_array_helper_af2cb70424ab029a8400464a5d82482ba}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a83607cbeaa88776e4d561f398776e95f}{
+typedef TreeType::SizeType {\bfseries SizeType}}
+\label{class_packed_memory_array_helper_a83607cbeaa88776e4d561f398776e95f}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_aaa87ea380a71f8819758f2431f7cfcf5}{
+typedef \hyperlink{class_complete_binary_tree_1_1_node}{TreeType::Node} {\bfseries Node}}
+\label{class_packed_memory_array_helper_aaa87ea380a71f8819758f2431f7cfcf5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_memory_array_helper_a0f53a72b3d553f5394e5c06509aec476}{
+bool {\bfseries affordsElementErasureAt} (\hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a0f53a72b3d553f5394e5c06509aec476}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a4f2136ce319fedc83e8926120e223a3c}{
+bool {\bfseries affordsElementInsertionAt} (\hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a4f2136ce319fedc83e8926120e223a3c}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_afadad70434b04266ae3e8b5249b82651}{
+bool {\bfseries affordsErasure} ()}
+\label{class_packed_memory_array_helper_afadad70434b04266ae3e8b5249b82651}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a463c0a5554f8b9a9e81d452646749a4f}{
+bool {\bfseries affordsInsertion} ()}
+\label{class_packed_memory_array_helper_a463c0a5554f8b9a9e81d452646749a4f}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_aa7ea09333d42ef892f8dd4fb9a27ff61}{
+void {\bfseries decreaseCardinality} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_aa7ea09333d42ef892f8dd4fb9a27ff61}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_abf265e1fd4fd8c02fccb180065967286}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries findEmptiestNode} ()}
+\label{class_packed_memory_array_helper_abf265e1fd4fd8c02fccb180065967286}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a0cce2a58150ed15cca6a1f6495160cea}{
+SizeType {\bfseries findIndexContainingElement} (const SizeType \&elementIndex)}
+\label{class_packed_memory_array_helper_a0cce2a58150ed15cca6a1f6495160cea}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a646d3791d84e2cc2e0744b8b80e717e7}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries findNodeContainingElement} (const SizeType \&elementIndex)}
+\label{class_packed_memory_array_helper_a646d3791d84e2cc2e0744b8b80e717e7}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a6e7dfee2b48bfc633c872df549c50009}{
+SizeType {\bfseries getAggregateOffsetOver} (const SizeType \&index)}
+\label{class_packed_memory_array_helper_a6e7dfee2b48bfc633c872df549c50009}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a07705c5fc0a065d323ff12da491d6529}{
+SizeType {\bfseries getCapacity} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a07705c5fc0a065d323ff12da491d6529}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_aab799a326655d2ce27bc764250e4a153}{
+SizeType {\bfseries getCardinality} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_aab799a326655d2ce27bc764250e4a153}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a49f78da93da4a5807d043e129b4ab150}{
+SizeType {\bfseries getIndexUnderNode} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a49f78da93da4a5807d043e129b4ab150}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a0875db0a4f6312a729a55aee4037dcf4}{
+SizeType {\bfseries getMemoryUsage} ()}
+\label{class_packed_memory_array_helper_a0875db0a4f6312a729a55aee4037dcf4}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_af50143812d2e1d57fdf12b197c52531e}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries getNodeOverIndex} (const SizeType \&index)}
+\label{class_packed_memory_array_helper_af50143812d2e1d57fdf12b197c52531e}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a746009abc5dcd2ef838fd6126cb42536}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries getParentForErasure} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a746009abc5dcd2ef838fd6126cb42536}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a14f04214d87242e54da9d5c3abcd40ce}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries getParentForInsertion} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a14f04214d87242e54da9d5c3abcd40ce}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a9772235f3fbdedaa16abd4d5e96707b0}{
+const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \& {\bfseries getRoot} ()}
+\label{class_packed_memory_array_helper_a9772235f3fbdedaa16abd4d5e96707b0}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a24072474d662ddd94356845579d34b8b}{
+void {\bfseries increaseCardinality} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u)}
+\label{class_packed_memory_array_helper_a24072474d662ddd94356845579d34b8b}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a9e936f8e09a20a6c8adf5da066d11a10}{
+void {\bfseries printDot} (std::ostream \&out, const std::string \&name=\char`\"{}\char`\"{})}
+\label{class_packed_memory_array_helper_a9e936f8e09a20a6c8adf5da066d11a10}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a931590148a6db5e1f987ee652b0ca37e}{
+{\footnotesize template$<$typename StreamType $>$ }\\void {\bfseries rearrangeOver} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u, const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&sparseNode, StreamType \&stream)}
+\label{class_packed_memory_array_helper_a931590148a6db5e1f987ee652b0ca37e}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a1604cd1249ec01d612e0b1ce23a534ce}{
+{\footnotesize template$<$typename StreamType $>$ }\\void {\bfseries rearrangeOver} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&u, StreamType \&stream)}
+\label{class_packed_memory_array_helper_a1604cd1249ec01d612e0b1ce23a534ce}
+
+\item 
+\hypertarget{class_packed_memory_array_helper_a7c5979358aaff4e7c074a3338075367c}{
+void {\bfseries reset} (const SizeType \&treeHeight, const SizeType \&leafSize, const SizeType \&cardinality, double minEmptinessPercentage=0.5, double maxFullnessPercentage=0.75)}
+\label{class_packed_memory_array_helper_a7c5979358aaff4e7c074a3338075367c}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename DataType$>$ class PackedMemoryArrayHelper$<$ DataType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Arrays/packedMemoryArrayHelper.h\end{DoxyCompactItemize}

@@ -1,0 +1,71 @@
+\hypertarget{class_explicit_heap_storage}{
+\section{ExplicitHeapStorage$<$ DataType $>$ Class Template Reference}
+\label{class_explicit_heap_storage}\index{ExplicitHeapStorage@{ExplicitHeapStorage}}
+}
+
+
+Collaboration diagram for ExplicitHeapStorage$<$ DataType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{class_explicit_heap_storage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_explicit_heap_storage_a5d5f82c2b9e383cf1d4553a26436a867}{
+typedef PriorityQueueSizeType {\bfseries SizeType}}
+\label{class_explicit_heap_storage_a5d5f82c2b9e383cf1d4553a26436a867}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a45c9e2c26f811f05171a9e53cc173a32}{
+typedef \hyperlink{class_explicit_node_pointers}{ExplicitNodePointers}$<$ DataType $>$ {\bfseries PointerType}}
+\label{class_explicit_heap_storage_a45c9e2c26f811f05171a9e53cc173a32}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_explicit_heap_storage_a60a6a619f43dae73bcc37a9326466834}{
+{\bfseries ExplicitHeapStorage} (DataType $\ast$pool, const SizeType \&height)}
+\label{class_explicit_heap_storage_a60a6a619f43dae73bcc37a9326466834}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a008de448af41bdc3efe1997694d0ff58}{
+DataType $\ast$ {\bfseries getRootAddr} () const }
+\label{class_explicit_heap_storage_a008de448af41bdc3efe1997694d0ff58}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a3770c0e081c24f8df01a74dbb5a67c40}{
+DataType $\ast$ {\bfseries getBfsIndexAddress} (const SizeType \&bfsIndex)}
+\label{class_explicit_heap_storage_a3770c0e081c24f8df01a74dbb5a67c40}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a0a6d2ce4388f02299a0aea9b53bbb153}{
+DataType $\ast$ {\bfseries getLeftChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_heap_storage_a0a6d2ce4388f02299a0aea9b53bbb153}
+
+\item 
+\hypertarget{class_explicit_heap_storage_ac46f219ba9f2ffb8375c093d7f4b9260}{
+SizeType {\bfseries getMemoryUsage} () const }
+\label{class_explicit_heap_storage_ac46f219ba9f2ffb8375c093d7f4b9260}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a886d855103b77eff99589f84ef8f9e06}{
+DataType $\ast$ {\bfseries getRightChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_heap_storage_a886d855103b77eff99589f84ef8f9e06}
+
+\item 
+\hypertarget{class_explicit_heap_storage_a84ec7aeca0de117ca003fa58115dfb7e}{
+DataType $\ast$ {\bfseries getParentAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_heap_storage_a84ec7aeca0de117ca003fa58115dfb7e}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename DataType$>$ class ExplicitHeapStorage$<$ DataType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/treeStorageSchemes.h\end{DoxyCompactItemize}

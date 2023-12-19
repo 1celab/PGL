@@ -1,0 +1,94 @@
+\hypertarget{class_p_m_a_in_edge}{
+\section{PMAInEdge$<$ Vtype, Etype $>$ Class Template Reference}
+\label{class_p_m_a_in_edge}\index{PMAInEdge@{PMAInEdge}}
+}
+
+
+Inherits \hyperlink{class_etype}{Etype}.
+
+
+
+Collaboration diagram for PMAInEdge$<$ Vtype, Etype $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_p_m_a_in_edge__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_m_a_in_edge_a5314b5e5c03ed253efaaefb16ed4df6a}{
+typedef \hyperlink{class_packed_memory_array_impl}{PackedMemoryArrayImpl}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$::\hyperlink{class_p_m_a_edge}{EdgeDescriptor} {\bfseries EdgeDescriptor}}
+\label{class_p_m_a_in_edge_a5314b5e5c03ed253efaaefb16ed4df6a}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_ab6c55fe2c867b7ea76724c9ede58aa5e}{
+typedef \hyperlink{class_packed_memory_array_impl}{PackedMemoryArrayImpl}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$::\hyperlink{class_p_m_a_node}{NodeDescriptor} {\bfseries NodeDescriptor}}
+\label{class_p_m_a_in_edge_ab6c55fe2c867b7ea76724c9ede58aa5e}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_aecfc3ea8f59793dc584d3fe1f9d52604}{
+typedef \hyperlink{class_packed_memory_array_impl}{PackedMemoryArrayImpl}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$::SizeType {\bfseries SizeType}}
+\label{class_p_m_a_in_edge_aecfc3ea8f59793dc584d3fe1f9d52604}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_m_a_in_edge_afb2585b1000078e3eba24d5ca9143c27}{
+{\bfseries PMAInEdge} (unsigned int init=0)}
+\label{class_p_m_a_in_edge_afb2585b1000078e3eba24d5ca9143c27}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_a828fff128f59e717e48e8874359184e8}{
+{\bfseries PMAInEdge} (\hyperlink{class_p_m_a_node}{PMANode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$adjacentNode)}
+\label{class_p_m_a_in_edge_a828fff128f59e717e48e8874359184e8}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_a13b80629c2eb2d48490dd12057eedc4a}{
+bool {\bfseries operator==} (const \hyperlink{class_p_m_a_in_edge}{PMAInEdge} \&other) const }
+\label{class_p_m_a_in_edge_a13b80629c2eb2d48490dd12057eedc4a}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_a16c90e3a1310bdfe6251d46335fe09a3}{
+bool {\bfseries operator!=} (const \hyperlink{class_p_m_a_in_edge}{PMAInEdge} \&other) const }
+\label{class_p_m_a_in_edge_a16c90e3a1310bdfe6251d46335fe09a3}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_m_a_in_edge_a933228f4001dc1e5ec15ce189bef64ca}{
+static unsigned int {\bfseries memUsage} ()}
+\label{class_p_m_a_in_edge_a933228f4001dc1e5ec15ce189bef64ca}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_m_a_in_edge_ace01d9c3f897c2149680d212940757f1}{
+\hyperlink{class_p_m_a_node}{PMANode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$ {\bfseries m\_\-adjacentNode}}
+\label{class_p_m_a_in_edge_ace01d9c3f897c2149680d212940757f1}
+
+\item 
+\hypertarget{class_p_m_a_in_edge_a8dbe981ff23b7c7dcc36ec8900528083}{
+\hyperlink{class_p_m_a_edge}{PMAEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$ {\bfseries m\_\-edge}}
+\label{class_p_m_a_in_edge_a8dbe981ff23b7c7dcc36ec8900528083}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_p_m_a_in_edge_aec8eefa1c370e0e6116bbb6458ef826a}{
+std::ostream \& {\bfseries operator$<$$<$} (std::ostream \&out, \hyperlink{class_p_m_a_in_edge}{PMAInEdge} other)}
+\label{class_p_m_a_in_edge_aec8eefa1c370e0e6116bbb6458ef826a}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Vtype, typename Etype$>$ class PMAInEdge$<$ Vtype, Etype $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/packedMemoryArrayImpl.h\end{DoxyCompactItemize}

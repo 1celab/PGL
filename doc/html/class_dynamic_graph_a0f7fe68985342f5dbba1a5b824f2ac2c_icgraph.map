@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_dynamic_graph.html#af648cec2163d1f7c5e8da88bf389eb02" title="Erases an edge from the graph." alt="" coords="281,5,457,35"/>
+<area shape="rect" href="$class_dynamic_graph.html#a83a9c51df95e5e3ef353b64f58781f00" title="Returns the descriptor of an edge (u,v)." alt="" coords="259,59,480,88"/>
+<area shape="rect" href="$class_dynamic_graph.html#a0d6d44c1f95ee743e57164afd68954fc" title="Returns the target node of an incoming edge." alt="" coords="296,112,443,141"/>
+</map>

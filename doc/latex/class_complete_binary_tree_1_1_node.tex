@@ -1,0 +1,336 @@
+\hypertarget{class_complete_binary_tree_1_1_node}{
+\section{CompleteBinaryTree$<$ DataType, StorageStrategy $>$::Node Class Reference}
+\label{class_complete_binary_tree_1_1_node}\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+}
+
+
+A node iterator of a \hyperlink{class_complete_binary_tree}{CompleteBinaryTree}.  
+
+
+
+
+{\ttfamily \#include $<$completeBinaryTree.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a15ada602ad01736d3e107da31d391d23}{
+\hyperlink{class_complete_binary_tree_1_1_node_a15ada602ad01736d3e107da31d391d23}{Node} ()}
+\label{class_complete_binary_tree_1_1_node_a15ada602ad01736d3e107da31d391d23}
+
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+\hyperlink{class_complete_binary_tree_1_1_node_ac4466e71737c92edd77d5fd27155ce8a}{Node} (\hyperlink{class_complete_binary_tree}{CompleteBinaryTree}$<$ DataType, StorageStrategy $>$ $\ast$T, DataType $\ast$ptr, const SizeType bfsIndex)
+\begin{DoxyCompactList}\small\item\em Default constructor. \item\end{DoxyCompactList}\item 
+const DataType $\ast$ \hyperlink{class_complete_binary_tree_1_1_node_a78c55b78241e27d27361b250cf77deb8}{getAddress} () const 
+\begin{DoxyCompactList}\small\item\em Returns the address of the data of the node. \item\end{DoxyCompactList}\item 
+const SizeType \& \hyperlink{class_complete_binary_tree_1_1_node_a5d57f8452e31eb8680fb186655b840c3}{getBfsIndex} () const 
+\begin{DoxyCompactList}\small\item\em Returns the bfs index of a node ( root node has bfs index = 1). \item\end{DoxyCompactList}\item 
+const SizeType \& \hyperlink{class_complete_binary_tree_1_1_node_a0745fc163eaa6c63ef8987a2ba881e9e}{getDepth} () const 
+\begin{DoxyCompactList}\small\item\em Returns the depth of the node (its distance from root). \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_ace84ee82db224331db70e9668a4f75c1}{getHeight} () const 
+\begin{DoxyCompactList}\small\item\em Returns the height of the node (its distance from the leaves). \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_a36d28454d7336f2366b784335169a46c}{getHorizontalIndex} () const 
+\begin{DoxyCompactList}\small\item\em Returns the horizontal index of this node ( the index among the same level nodes). \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_a3735cf9d8680a7aeb0f88cf4f7672921}{getMemoryUsage} ()
+\begin{DoxyCompactList}\small\item\em Returns the number of bytes allocated to this node. \item\end{DoxyCompactList}\item 
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_a067ae41ed3433d842176ddd96edbfeb7}{getPoolIndex} () const 
+\begin{DoxyCompactList}\small\item\em Returns the pool index of the node ( the index of the array where it is stored). \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_ab90f908781f56a1a41fc4ac5c3943f9b}{
+void \hyperlink{class_complete_binary_tree_1_1_node_ab90f908781f56a1a41fc4ac5c3943f9b}{goLeft} ()}
+\label{class_complete_binary_tree_1_1_node_ab90f908781f56a1a41fc4ac5c3943f9b}
+
+\begin{DoxyCompactList}\small\item\em Sets the node as its left child node There is NO check if this node is already a leaf. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a79ecd13e917240e2986793cb40db58f5}{
+void \hyperlink{class_complete_binary_tree_1_1_node_a79ecd13e917240e2986793cb40db58f5}{goRight} ()}
+\label{class_complete_binary_tree_1_1_node_a79ecd13e917240e2986793cb40db58f5}
+
+\begin{DoxyCompactList}\small\item\em Sets the node as its right child node There is NO check if this node is already a leaf. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a8e56c20e8435282f3d9f2e6fbe0eb547}{
+void \hyperlink{class_complete_binary_tree_1_1_node_a8e56c20e8435282f3d9f2e6fbe0eb547}{goUp} ()}
+\label{class_complete_binary_tree_1_1_node_a8e56c20e8435282f3d9f2e6fbe0eb547}
+
+\begin{DoxyCompactList}\small\item\em Sets the node as its parent node There is NO check if this node is already a leaf. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_addeecc7b908df78a88f1e2b897b39d10}{isLeaf} () const 
+\begin{DoxyCompactList}\small\item\em Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a leaf. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_ae30f3348baf8149b733d6d6a022d7543}{isRightChild} () const 
+\begin{DoxyCompactList}\small\item\em Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a right child. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_abd6c532c0fead0a2a1b014973d6208d1}{isToTheLeftOf} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&other) const 
+\begin{DoxyCompactList}\small\item\em Checks if this leaf is to the left of another node. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_aaa1aa1b75088f1d923b16405d8ef171c}{isRoot} () const 
+\begin{DoxyCompactList}\small\item\em Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is root. \item\end{DoxyCompactList}\item 
+\hyperlink{class_complete_binary_tree_1_1_node}{Node} \& \hyperlink{class_complete_binary_tree_1_1_node_ac616ae7ce94b4647585cae0e1cc659b4}{operator=} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_a32bf1648f0071decd3e84b24c17dfbb3}{operator==} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&other) const 
+\begin{DoxyCompactList}\small\item\em Equality operator. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_complete_binary_tree_1_1_node_a156e43bb1fecab5634e53d7a026f4914}{operator!=} (const \hyperlink{class_complete_binary_tree_1_1_node}{Node} \&other) const 
+\begin{DoxyCompactList}\small\item\em Inequality operator. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_complete_binary_tree_1_1_node_a12eb13f341c8bab833c25b7f745c9ecf}{setAtBfsIndex} (const SizeType \&bfsIndex)
+\begin{DoxyCompactList}\small\item\em Sets the node at the given bfs index (root node has bfs index = 1). \item\end{DoxyCompactList}\item 
+void \hyperlink{class_complete_binary_tree_1_1_node_a81f250b9aaed4e456f5265f2f83ef769}{setAtPos} (const SizeType \&height, const SizeType \&horizontalPosition)
+\begin{DoxyCompactList}\small\item\em Sets the \hyperlink{class_complete_binary_tree_1_1_node}{Node} at a given height and a given horizontal index. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a5118757bbeaf315f6b44b22ae9dd6fe4}{
+void \hyperlink{class_complete_binary_tree_1_1_node_a5118757bbeaf315f6b44b22ae9dd6fe4}{setAtRoot} ()}
+\label{class_complete_binary_tree_1_1_node_a5118757bbeaf315f6b44b22ae9dd6fe4}
+
+\begin{DoxyCompactList}\small\item\em Sets the node at the root node. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_complete_binary_tree_1_1_node_addd3893923d5e5cff2b3871e57f5f0c1}{
+\hyperlink{class_complete_binary_tree}{CompleteBinaryTree}$<$ DataType, StorageStrategy $>$ $\ast$ \hyperlink{class_complete_binary_tree_1_1_node_addd3893923d5e5cff2b3871e57f5f0c1}{m\_\-T}}
+\label{class_complete_binary_tree_1_1_node_addd3893923d5e5cff2b3871e57f5f0c1}
+
+\begin{DoxyCompactList}\small\item\em The binary tree this \hyperlink{class_complete_binary_tree_1_1_node}{Node} lies upon. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_aca3a426702b4e1e5f687b0fe44a65e89}{
+DataType $\ast$ \hyperlink{class_complete_binary_tree_1_1_node_aca3a426702b4e1e5f687b0fe44a65e89}{m\_\-ptr}}
+\label{class_complete_binary_tree_1_1_node_aca3a426702b4e1e5f687b0fe44a65e89}
+
+\begin{DoxyCompactList}\small\item\em The address where the node's data lie upon. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a1c301e0188c93eb728d145575ac495bd}{
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_a1c301e0188c93eb728d145575ac495bd}{m\_\-bfsIndex}}
+\label{class_complete_binary_tree_1_1_node_a1c301e0188c93eb728d145575ac495bd}
+
+\begin{DoxyCompactList}\small\item\em The index of the node in the node array using the Breadth First Search layout indexing. \item\end{DoxyCompactList}\item 
+\hypertarget{class_complete_binary_tree_1_1_node_a494f9a365fbcaeb2a1eafdf4e5c15478}{
+SizeType \hyperlink{class_complete_binary_tree_1_1_node_a494f9a365fbcaeb2a1eafdf4e5c15478}{m\_\-depth}}
+\label{class_complete_binary_tree_1_1_node_a494f9a365fbcaeb2a1eafdf4e5c15478}
+
+\begin{DoxyCompactList}\small\item\em The depth of the node (its distance from the root node). \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ class CompleteBinaryTree$<$ DataType, StorageStrategy $>$::Node}
+
+A node iterator of a \hyperlink{class_complete_binary_tree}{CompleteBinaryTree}. 
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em DataType}]The data to associate with the nodes. It must be a class or struct \item[{\em StorageStrategy}]The underlying storage implementation to use. Available implementations are 'HeapStorage', 'ExplicitHeapStorage', 'VebStorage', 'ExplicitVebStorage', 'ExplicitPowerVebStorage' and 'SplitStorage' \end{DoxyTemplParams}
+\begin{DoxyAuthor}{Author}
+Panos Michail 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_complete_binary_tree_1_1_node_ac4466e71737c92edd77d5fd27155ce8a}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!Node@{Node}}
+\index{Node@{Node}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::Node ({\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$ $\ast$ {\em T}, \/  DataType $\ast$ {\em ptr}, \/  const SizeType {\em bfsIndex})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_ac4466e71737c92edd77d5fd27155ce8a}
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em T}]The tree the node lies upon \item[{\em ptr}]A pointer to the data associated with this node \item[{\em bfsIndex}]The index of the node in the Breadth First Search \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_complete_binary_tree_1_1_node_a78c55b78241e27d27361b250cf77deb8}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getAddress@{getAddress}}
+\index{getAddress@{getAddress}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getAddress}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ const DataType$\ast$ {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getAddress () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a78c55b78241e27d27361b250cf77deb8}
+
+
+Returns the address of the data of the node. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the data of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a5d57f8452e31eb8680fb186655b840c3}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getBfsIndex@{getBfsIndex}}
+\index{getBfsIndex@{getBfsIndex}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getBfsIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ const SizeType\& {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getBfsIndex () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a5d57f8452e31eb8680fb186655b840c3}
+
+
+Returns the bfs index of a node ( root node has bfs index = 1). 
+
+\begin{DoxyReturn}{Returns}
+The bfs index of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a0745fc163eaa6c63ef8987a2ba881e9e}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getDepth@{getDepth}}
+\index{getDepth@{getDepth}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getDepth}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ const SizeType\& {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getDepth () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a0745fc163eaa6c63ef8987a2ba881e9e}
+
+
+Returns the depth of the node (its distance from root). 
+
+\begin{DoxyReturn}{Returns}
+The depth of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_ace84ee82db224331db70e9668a4f75c1}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getHeight}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ SizeType {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getHeight () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_ace84ee82db224331db70e9668a4f75c1}
+
+
+Returns the height of the node (its distance from the leaves). 
+
+\begin{DoxyReturn}{Returns}
+The height of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a36d28454d7336f2366b784335169a46c}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getHorizontalIndex@{getHorizontalIndex}}
+\index{getHorizontalIndex@{getHorizontalIndex}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getHorizontalIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ SizeType {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getHorizontalIndex () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a36d28454d7336f2366b784335169a46c}
+
+
+Returns the horizontal index of this node ( the index among the same level nodes). 
+
+\begin{DoxyReturn}{Returns}
+The horizontal index of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a3735cf9d8680a7aeb0f88cf4f7672921}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getMemoryUsage@{getMemoryUsage}}
+\index{getMemoryUsage@{getMemoryUsage}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getMemoryUsage}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ SizeType {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getMemoryUsage ()\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a3735cf9d8680a7aeb0f88cf4f7672921}
+
+
+Returns the number of bytes allocated to this node. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes allocated to this node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a067ae41ed3433d842176ddd96edbfeb7}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!getPoolIndex@{getPoolIndex}}
+\index{getPoolIndex@{getPoolIndex}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{getPoolIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ SizeType {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::getPoolIndex () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a067ae41ed3433d842176ddd96edbfeb7}
+
+
+Returns the pool index of the node ( the index of the array where it is stored). 
+
+\begin{DoxyReturn}{Returns}
+The pool index of the node 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_addeecc7b908df78a88f1e2b897b39d10}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!isLeaf@{isLeaf}}
+\index{isLeaf@{isLeaf}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{isLeaf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::isLeaf () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_addeecc7b908df78a88f1e2b897b39d10}
+
+
+Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a leaf. 
+
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a leaf, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_ae30f3348baf8149b733d6d6a022d7543}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!isRightChild@{isRightChild}}
+\index{isRightChild@{isRightChild}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{isRightChild}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::isRightChild () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_ae30f3348baf8149b733d6d6a022d7543}
+
+
+Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a right child. 
+
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is a right child, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_aaa1aa1b75088f1d923b16405d8ef171c}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!isRoot@{isRoot}}
+\index{isRoot@{isRoot}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{isRoot}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::isRoot () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_aaa1aa1b75088f1d923b16405d8ef171c}
+
+
+Checks if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is root. 
+
+\begin{DoxyReturn}{Returns}
+True if this \hyperlink{class_complete_binary_tree_1_1_node}{Node} is root, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_abd6c532c0fead0a2a1b014973d6208d1}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!isToTheLeftOf@{isToTheLeftOf}}
+\index{isToTheLeftOf@{isToTheLeftOf}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{isToTheLeftOf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::isToTheLeftOf (const {\bf Node} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_abd6c532c0fead0a2a1b014973d6208d1}
+
+
+Checks if this leaf is to the left of another node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]The node to compare to \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True the ancestor of this node on the level of the other node is to the left of the other node, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a156e43bb1fecab5634e53d7a026f4914}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::operator!= (const {\bf Node} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a156e43bb1fecab5634e53d7a026f4914}
+
+
+Inequality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]The node to compare to \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the other node points to different data from this node, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_ac616ae7ce94b4647585cae0e1cc659b4}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!operator=@{operator=}}
+\index{operator=@{operator=}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ {\bf Node}\& {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::operator= (const {\bf Node} \& {\em other})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_ac616ae7ce94b4647585cae0e1cc659b4}
+
+
+Assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em The}]node to copy \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the newly assigned \hyperlink{class_complete_binary_tree_1_1_node}{Node} 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a32bf1648f0071decd3e84b24c17dfbb3}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!operator==@{operator==}}
+\index{operator==@{operator==}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ bool {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::operator== (const {\bf Node} \& {\em other}) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a32bf1648f0071decd3e84b24c17dfbb3}
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em other}]The node to compare to \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the other node points to the same data as this node, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_complete_binary_tree_1_1_node_a12eb13f341c8bab833c25b7f745c9ecf}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!setAtBfsIndex@{setAtBfsIndex}}
+\index{setAtBfsIndex@{setAtBfsIndex}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{setAtBfsIndex}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ void {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::setAtBfsIndex (const SizeType \& {\em bfsIndex})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a12eb13f341c8bab833c25b7f745c9ecf}
+
+
+Sets the node at the given bfs index (root node has bfs index = 1). 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em bfsIndex}]The bfs index to set the node to \end{DoxyParams}
+\hypertarget{class_complete_binary_tree_1_1_node_a81f250b9aaed4e456f5265f2f83ef769}{
+\index{CompleteBinaryTree::Node@{CompleteBinaryTree::Node}!setAtPos@{setAtPos}}
+\index{setAtPos@{setAtPos}!CompleteBinaryTree::Node@{CompleteBinaryTree::Node}}
+\subsubsection[{setAtPos}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename DataType, template$<$ typename datatype $>$ class StorageStrategy = HeapStorage$>$ void {\bf CompleteBinaryTree}$<$ DataType, StorageStrategy $>$::Node::setAtPos (const SizeType \& {\em height}, \/  const SizeType \& {\em horizontalPosition})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_complete_binary_tree_1_1_node_a81f250b9aaed4e456f5265f2f83ef769}
+
+
+Sets the \hyperlink{class_complete_binary_tree_1_1_node}{Node} at a given height and a given horizontal index. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em height}]The new height of the node \item[{\em horizontalPosition}]The horizontal index of this node on this level \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/completeBinaryTree.h\end{DoxyCompactItemize}

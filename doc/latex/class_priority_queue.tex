@@ -1,0 +1,126 @@
+\hypertarget{class_priority_queue}{
+\section{PriorityQueue$<$ KeyType, DataType, StorageType $>$ Class Template Reference}
+\label{class_priority_queue}\index{PriorityQueue@{PriorityQueue}}
+}
+
+
+Collaboration diagram for PriorityQueue$<$ KeyType, DataType, StorageType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_priority_queue__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_priority_queue_a4fee547a199ba73a3a5930ff472d53ba}{
+typedef PQSizeType {\bfseries SizeType}}
+\label{class_priority_queue_a4fee547a199ba73a3a5930ff472d53ba}
+
+\item 
+\hypertarget{class_priority_queue_abe5003d7a343b66513416707ca504903}{
+typedef PQSizeType $\ast$ {\bfseries DescriptorType}}
+\label{class_priority_queue_abe5003d7a343b66513416707ca504903}
+
+\item 
+\hypertarget{class_priority_queue_a9e91b1dd254fd8cfb17af4536b9d37ad}{
+typedef \hyperlink{class_complete_binary_tree}{CompleteBinaryTree}$<$ \hyperlink{class_heap_item}{HeapItem}$<$ KeyType, DataType $>$, StorageType $>$ {\bfseries TreeType}}
+\label{class_priority_queue_a9e91b1dd254fd8cfb17af4536b9d37ad}
+
+\item 
+\hypertarget{class_priority_queue_a11bfb9c0d48c39a48fed2a442826e9a7}{
+typedef \hyperlink{class_heap_item}{HeapItem}$<$ KeyType, DataType $>$ {\bfseries PQItem}}
+\label{class_priority_queue_a11bfb9c0d48c39a48fed2a442826e9a7}
+
+\item 
+\hypertarget{class_priority_queue_a95d79c45d0a7d055a79b237b0313d253}{
+typedef TreeType::Node {\bfseries Node}}
+\label{class_priority_queue_a95d79c45d0a7d055a79b237b0313d253}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_priority_queue_ae17e52b2596e934e4a38d46f02b78e07}{
+void {\bfseries clear} ()}
+\label{class_priority_queue_ae17e52b2596e934e4a38d46f02b78e07}
+
+\item 
+\hypertarget{class_priority_queue_a3d48dee27f8f06e8d50da3adf294cd02}{
+bool {\bfseries contains} (const DescriptorType ptr)}
+\label{class_priority_queue_a3d48dee27f8f06e8d50da3adf294cd02}
+
+\item 
+\hypertarget{class_priority_queue_af5c41cacf132acb8e764e57573e68c2f}{
+void {\bfseries decrease} (const KeyType \&key, const DescriptorType ptr)}
+\label{class_priority_queue_af5c41cacf132acb8e764e57573e68c2f}
+
+\item 
+\hypertarget{class_priority_queue_adb45112ab9cd42aff88f39973d2e3c99}{
+bool {\bfseries empty} () const }
+\label{class_priority_queue_adb45112ab9cd42aff88f39973d2e3c99}
+
+\item 
+void \hyperlink{class_priority_queue_aa8e6289ad1b0f220efe2451644922bf0}{insert} (const KeyType \&key, const DataType \&data, const DescriptorType ptr=0)
+\begin{DoxyCompactList}\small\item\em Insert a key-\/value pair to the priority queue. \item\end{DoxyCompactList}\item 
+\hypertarget{class_priority_queue_ac35a32c6a9ffdfc012d772d4acf4841f}{
+const \hyperlink{class_heap_item}{PQItem} \& {\bfseries min} ()}
+\label{class_priority_queue_ac35a32c6a9ffdfc012d772d4acf4841f}
+
+\item 
+\hypertarget{class_priority_queue_a301a70970503fe25ec493a2fddf03557}{
+const KeyType \& {\bfseries minKey} ()}
+\label{class_priority_queue_a301a70970503fe25ec493a2fddf03557}
+
+\item 
+\hypertarget{class_priority_queue_a00079ca0b496f7dd97ffa74c9e32eb35}{
+const DataType \& {\bfseries minItem} ()}
+\label{class_priority_queue_a00079ca0b496f7dd97ffa74c9e32eb35}
+
+\item 
+\hypertarget{class_priority_queue_a1554c9f244831aaa21bfca2afb70602c}{
+void {\bfseries popMin} ()}
+\label{class_priority_queue_a1554c9f244831aaa21bfca2afb70602c}
+
+\item 
+\hypertarget{class_priority_queue_ae801a98111fca7d5a251c36bc4192755}{
+void {\bfseries printGraphviz} (const std::string \&filename)}
+\label{class_priority_queue_ae801a98111fca7d5a251c36bc4192755}
+
+\item 
+\hypertarget{class_priority_queue_a57ef08de2b59e1a5a52fde74c64d8060}{
+const SizeType \& {\bfseries size} ()}
+\label{class_priority_queue_a57ef08de2b59e1a5a52fde74c64d8060}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_priority_queue_a5ed0dac8f4df5cf00cc80084958d5fba}{
+\hyperlink{class_complete_binary_tree}{TreeType} {\bfseries m\_\-T}}
+\label{class_priority_queue_a5ed0dac8f4df5cf00cc80084958d5fba}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename KeyType, typename DataType, template$<$ typename datatype $>$ class StorageType$>$ class PriorityQueue$<$ KeyType, DataType, StorageType $>$}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_priority_queue_aa8e6289ad1b0f220efe2451644922bf0}{
+\index{PriorityQueue@{PriorityQueue}!insert@{insert}}
+\index{insert@{insert}!PriorityQueue@{PriorityQueue}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename KeyType, typename DataType, template$<$ typename datatype $>$ class StorageType$>$ void {\bf PriorityQueue}$<$ KeyType, DataType, StorageType $>$::insert (const KeyType \& {\em key}, \/  const DataType \& {\em data}, \/  const DescriptorType {\em ptr} = {\ttfamily 0})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_priority_queue_aa8e6289ad1b0f220efe2451644922bf0}
+
+
+Insert a key-\/value pair to the priority queue. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em key}]The key of the new element \item[{\em data}]The assorted data for the new element \item[{\em ptr}]An address that holds a pointer to track the element in the queue. This address must be malloced/freed externally. If it is not given, you will not be able to decrease the key of an element once it is in the queue. \end{DoxyParams}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/priorityQueue.h\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_complete_binary_tree_1_1_node.html#ab90f908781f56a1a41fc4ac5c3943f9b" title="Sets the node as its left child node There is NO check if this node is already a..." alt="" coords="261,5,480,35"/>
+<area shape="rect" href="$class_complete_binary_tree_1_1_node.html#a79ecd13e917240e2986793cb40db58f5" title="Sets the node as its right child node There is NO check if this node is already a..." alt="" coords="257,59,484,88"/>
+<area shape="rect" href="$class_complete_binary_tree_1_1_node.html#a8e56c20e8435282f3d9f2e6fbe0eb547" title="Sets the node as its parent node There is NO check if this node is already a leaf..." alt="" coords="264,112,477,141"/>
+</map>

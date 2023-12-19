@@ -1,0 +1,75 @@
+\hypertarget{class_j_s_o_n_writer}{
+\section{JSONWriter$<$ GraphType $>$ Class Template Reference}
+\label{class_j_s_o_n_writer}\index{JSONWriter@{JSONWriter}}
+}
+
+
+Inherits \hyperlink{class_graph_writer}{GraphWriter$<$ GraphType $>$}.
+
+
+
+Collaboration diagram for JSONWriter$<$ GraphType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_j_s_o_n_writer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_j_s_o_n_writer_a6937579c5e9bd1f8f0cfe25b1c8541c4}{
+typedef GraphType::NodeIterator {\bfseries NodeIterator}}
+\label{class_j_s_o_n_writer_a6937579c5e9bd1f8f0cfe25b1c8541c4}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_acdf29f89aa66c55b6a888a72367469f1}{
+typedef GraphType::EdgeIterator {\bfseries EdgeIterator}}
+\label{class_j_s_o_n_writer_acdf29f89aa66c55b6a888a72367469f1}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_a873d2514d502cef3731bb586ba264db0}{
+typedef GraphType::NodeDescriptor {\bfseries NodeDescriptor}}
+\label{class_j_s_o_n_writer_a873d2514d502cef3731bb586ba264db0}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_adb9ee41f66f9c4e1e6bca201a1f312d4}{
+typedef GraphType::EdgeDescriptor {\bfseries EdgeDescriptor}}
+\label{class_j_s_o_n_writer_adb9ee41f66f9c4e1e6bca201a1f312d4}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_a2f39d292d35e6c346e3a3f1d99e0c34c}{
+typedef GraphType::SizeType {\bfseries SizeType}}
+\label{class_j_s_o_n_writer_a2f39d292d35e6c346e3a3f1d99e0c34c}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_j_s_o_n_writer_a9272c4c9e7a9c729a6564d9b3d9e0e09}{
+{\bfseries JSONWriter} (const std::string \&filename)}
+\label{class_j_s_o_n_writer_a9272c4c9e7a9c729a6564d9b3d9e0e09}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_ad5e142f76d4a975eb64ddbb53ef3dd68}{
+void {\bfseries write} (GraphType \&G)}
+\label{class_j_s_o_n_writer_ad5e142f76d4a975eb64ddbb53ef3dd68}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_a43d25daea3c35766a1e387cb27644c2f}{
+void {\bfseries writeNode} (GraphType \&G, NodeIterator \&u, std::ofstream \&out)}
+\label{class_j_s_o_n_writer_a43d25daea3c35766a1e387cb27644c2f}
+
+\item 
+\hypertarget{class_j_s_o_n_writer_af3167ed0cd824c4f44bfd7357b4329a7}{
+void {\bfseries writeEdge} (GraphType \&G, NodeIterator \&u, EdgeIterator \&e, std::ofstream \&out)}
+\label{class_j_s_o_n_writer_af3167ed0cd824c4f44bfd7357b4329a7}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename GraphType$>$ class JSONWriter$<$ GraphType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Utilities/graphIO.h\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_dynamic_graph.html#adf611f51b16f0fd3d2569c97ce966ff8" title="Returns the in degree of a node (number of incoming edges)." alt="" coords="213,5,357,35"/>
+<area shape="rect" href="$class_dynamic_graph.html#af3dcd9a6734363cc7bb0b252dad92659" title="Returns the degree of a node (number of outgoing edges)." alt="" coords="209,59,361,88"/>
+</map>

@@ -1,0 +1,75 @@
+\hypertarget{class_g_m_l_writer}{
+\section{GMLWriter$<$ GraphType $>$ Class Template Reference}
+\label{class_g_m_l_writer}\index{GMLWriter@{GMLWriter}}
+}
+
+
+Inherits \hyperlink{class_graph_writer}{GraphWriter$<$ GraphType $>$}.
+
+
+
+Collaboration diagram for GMLWriter$<$ GraphType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_g_m_l_writer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_g_m_l_writer_a1481f608c17c82f9a3caa5d84bf606b0}{
+typedef GraphType::NodeIterator {\bfseries NodeIterator}}
+\label{class_g_m_l_writer_a1481f608c17c82f9a3caa5d84bf606b0}
+
+\item 
+\hypertarget{class_g_m_l_writer_a6ec46615ef9ead7d335b9a6be8f4d366}{
+typedef GraphType::EdgeIterator {\bfseries EdgeIterator}}
+\label{class_g_m_l_writer_a6ec46615ef9ead7d335b9a6be8f4d366}
+
+\item 
+\hypertarget{class_g_m_l_writer_a5807883d7c7c38af4bec085875abc695}{
+typedef GraphType::NodeDescriptor {\bfseries NodeDescriptor}}
+\label{class_g_m_l_writer_a5807883d7c7c38af4bec085875abc695}
+
+\item 
+\hypertarget{class_g_m_l_writer_a58db6fc9a003f79f840fa448851d4f1d}{
+typedef GraphType::EdgeDescriptor {\bfseries EdgeDescriptor}}
+\label{class_g_m_l_writer_a58db6fc9a003f79f840fa448851d4f1d}
+
+\item 
+\hypertarget{class_g_m_l_writer_a862be715e780590c1f64761f615b3a52}{
+typedef GraphType::SizeType {\bfseries SizeType}}
+\label{class_g_m_l_writer_a862be715e780590c1f64761f615b3a52}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_g_m_l_writer_a19db959ea12789add9fffddd7afb13f1}{
+{\bfseries GMLWriter} (const std::string \&filename)}
+\label{class_g_m_l_writer_a19db959ea12789add9fffddd7afb13f1}
+
+\item 
+\hypertarget{class_g_m_l_writer_ae15206dda668538fc5c67ff6b738c909}{
+void {\bfseries write} (GraphType \&G)}
+\label{class_g_m_l_writer_ae15206dda668538fc5c67ff6b738c909}
+
+\item 
+\hypertarget{class_g_m_l_writer_acd7f811a5c65e6b9824299e8fa71ba46}{
+void {\bfseries writeNode} (GraphType \&G, NodeIterator \&u, std::ofstream \&out)}
+\label{class_g_m_l_writer_acd7f811a5c65e6b9824299e8fa71ba46}
+
+\item 
+\hypertarget{class_g_m_l_writer_ad856f3921f79020190dac407e795e2a6}{
+void {\bfseries writeEdge} (GraphType \&G, NodeIterator \&u, EdgeIterator \&e, std::ofstream \&out)}
+\label{class_g_m_l_writer_ad856f3921f79020190dac407e795e2a6}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename GraphType$>$ class GMLWriter$<$ GraphType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Utilities/graphIO.h\end{DoxyCompactItemize}

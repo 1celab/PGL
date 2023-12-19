@@ -1,0 +1,71 @@
+\hypertarget{class_explicit_power_veb_storage}{
+\section{ExplicitPowerVebStorage$<$ DataType $>$ Class Template Reference}
+\label{class_explicit_power_veb_storage}\index{ExplicitPowerVebStorage@{ExplicitPowerVebStorage}}
+}
+
+
+Collaboration diagram for ExplicitPowerVebStorage$<$ DataType $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_explicit_power_veb_storage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_explicit_power_veb_storage_abe13d6f48de8d199e07f75226194372f}{
+typedef PriorityQueueSizeType {\bfseries SizeType}}
+\label{class_explicit_power_veb_storage_abe13d6f48de8d199e07f75226194372f}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_a726c7dccebdf2d7dddfca150d2bcfa0d}{
+typedef \hyperlink{class_explicit_node_pointers}{ExplicitNodePointers}$<$ DataType $>$ {\bfseries PointerType}}
+\label{class_explicit_power_veb_storage_a726c7dccebdf2d7dddfca150d2bcfa0d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_explicit_power_veb_storage_a6020bc7a8ce0204a3c403c4ecb9195f5}{
+{\bfseries ExplicitPowerVebStorage} (DataType $\ast$pool, const SizeType \&height)}
+\label{class_explicit_power_veb_storage_a6020bc7a8ce0204a3c403c4ecb9195f5}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_ae24e887845ccd337bcb07479154d062b}{
+DataType $\ast$ {\bfseries getRootAddr} () const }
+\label{class_explicit_power_veb_storage_ae24e887845ccd337bcb07479154d062b}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_ab4e67b779120cd5c3b81b488cfe19433}{
+DataType $\ast$ {\bfseries getBfsIndexAddress} (const SizeType \&bfsIndex)}
+\label{class_explicit_power_veb_storage_ab4e67b779120cd5c3b81b488cfe19433}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_a3c62b98213a576cc05b228d23e0e28a2}{
+DataType $\ast$ {\bfseries getLeftChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_power_veb_storage_a3c62b98213a576cc05b228d23e0e28a2}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_aa9d5f81ebbd9cbf8c651e587a474dcda}{
+SizeType {\bfseries getMemoryUsage} () const }
+\label{class_explicit_power_veb_storage_aa9d5f81ebbd9cbf8c651e587a474dcda}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_a9aee949c54a881f11597c999165eb3c2}{
+DataType $\ast$ {\bfseries getRightChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_power_veb_storage_a9aee949c54a881f11597c999165eb3c2}
+
+\item 
+\hypertarget{class_explicit_power_veb_storage_a52952542ef9b88a8823e5d230c0e60d4}{
+DataType $\ast$ {\bfseries getParentAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_explicit_power_veb_storage_a52952542ef9b88a8823e5d230c0e60d4}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename DataType$>$ class ExplicitPowerVebStorage$<$ DataType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/treeStorageSchemes.h\end{DoxyCompactItemize}

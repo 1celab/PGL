@@ -1,0 +1,156 @@
+\hypertarget{class_adjacency_vector_impl}{
+\section{AdjacencyVectorImpl$<$ Vtype, Etype $>$ Class Template Reference}
+\label{class_adjacency_vector_impl}\index{AdjacencyVectorImpl@{AdjacencyVectorImpl}}
+}
+
+
+Collaboration diagram for AdjacencyVectorImpl$<$ Vtype, Etype $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_adjacency_vector_impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_adjacency_vector_impl_aecef16149f96ee5305cb54c96fba1103}{
+typedef unsigned int {\bfseries SizeType}}
+\label{class_adjacency_vector_impl_aecef16149f96ee5305cb54c96fba1103}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a96cadfdef827b0b7e715dfcb36478442}{
+typedef std::vector$<$ \hyperlink{class_a_v_node}{AVNode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries NodeIterator}}
+\label{class_adjacency_vector_impl_a96cadfdef827b0b7e715dfcb36478442}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a38c66949a755821a57422c28813d3560}{
+typedef std::vector$<$ \hyperlink{class_a_v_edge}{AVEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries EdgeIterator}}
+\label{class_adjacency_vector_impl_a38c66949a755821a57422c28813d3560}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a1307f215e53c3a4776b74b42e9390fd7}{
+typedef SizeType $\ast$ {\bfseries NodeDescriptor}}
+\label{class_adjacency_vector_impl_a1307f215e53c3a4776b74b42e9390fd7}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_ac44c2e8468160ee05db2bfedc25c417e}{
+typedef std::pair$<$ SizeType, SizeType $>$ $\ast$ {\bfseries EdgeDescriptor}}
+\label{class_adjacency_vector_impl_ac44c2e8468160ee05db2bfedc25c417e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_adjacency_vector_impl_a48634c22797173ad4cac2e91e1ede28c}{
+const NodeDescriptor \& {\bfseries insertNode} ()}
+\label{class_adjacency_vector_impl_a48634c22797173ad4cac2e91e1ede28c}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a6d8e9ff2b7ba01649572f0f32411d06d}{
+const EdgeDescriptor \& {\bfseries insertEdge} (const NodeDescriptor \&uD, const NodeDescriptor \&vD)}
+\label{class_adjacency_vector_impl_a6d8e9ff2b7ba01649572f0f32411d06d}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a2062617a7fd696046dd877869157f8ed}{
+void {\bfseries eraseNode} (NodeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a2062617a7fd696046dd877869157f8ed}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a7ae0fd1a9b53aee9e3b3e3b80e48d8af}{
+void {\bfseries eraseEdge} (EdgeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a7ae0fd1a9b53aee9e3b3e3b80e48d8af}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a0833d355f471c0306ee4b40b6e588558}{
+void {\bfseries sanitiseNode} (const NodeIterator \&u)}
+\label{class_adjacency_vector_impl_a0833d355f471c0306ee4b40b6e588558}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a58893bf0b10c7160737c2cd5552d7469}{
+const NodeIterator \& {\bfseries beginNodes} ()}
+\label{class_adjacency_vector_impl_a58893bf0b10c7160737c2cd5552d7469}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_af902c478ea67c419286ca44a4b9c1ddd}{
+const NodeIterator \& {\bfseries endNodes} ()}
+\label{class_adjacency_vector_impl_af902c478ea67c419286ca44a4b9c1ddd}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a91bf0b44b807b36d2193c75541e72b56}{
+const EdgeIterator \& {\bfseries beginEdges} (const NodeIterator \&u)}
+\label{class_adjacency_vector_impl_a91bf0b44b807b36d2193c75541e72b56}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_af114baa7bb65546250b41124cdf3f7dd}{
+const EdgeIterator \& {\bfseries endEdges} (const NodeIterator \&u)}
+\label{class_adjacency_vector_impl_af114baa7bb65546250b41124cdf3f7dd}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_acf68508d2e89e473b397245b9ba57cce}{
+const EdgeIterator \& {\bfseries beginBackEdges} (const NodeIterator \&u)}
+\label{class_adjacency_vector_impl_acf68508d2e89e473b397245b9ba57cce}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_abac32b753cbe54fb99a82ab4f38826cb}{
+const EdgeIterator \& {\bfseries endBackEdges} (const NodeIterator \&u)}
+\label{class_adjacency_vector_impl_abac32b753cbe54fb99a82ab4f38826cb}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a1daed3d45c03d0b122dffc6b20a92b3a}{
+const NodeIterator \& {\bfseries chooseNode} ()}
+\label{class_adjacency_vector_impl_a1daed3d45c03d0b122dffc6b20a92b3a}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a77a6f34a09d45f7c752527ada23d19a6}{
+const EdgeIterator \& {\bfseries getEdgeIterator} (const EdgeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a77a6f34a09d45f7c752527ada23d19a6}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a7a30cba77020776a5a1fc258a769e743}{
+const NodeIterator \& {\bfseries getNodeIterator} (const NodeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a7a30cba77020776a5a1fc258a769e743}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a6dea4aa15b006efbf6fa275b085af78f}{
+const NodeIterator \& {\bfseries getAdjacentNodeIterator} (const EdgeIterator \&e)}
+\label{class_adjacency_vector_impl_a6dea4aa15b006efbf6fa275b085af78f}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a003eb09fd853b93a29602995c911d669}{
+const EdgeIterator \& {\bfseries getOppositeEdgeIterator} (const EdgeIterator \&e)}
+\label{class_adjacency_vector_impl_a003eb09fd853b93a29602995c911d669}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a344cb0514645f006e5dc503861bf42c3}{
+const bool \& {\bfseries isBackEdge} (const EdgeIterator \&e) const }
+\label{class_adjacency_vector_impl_a344cb0514645f006e5dc503861bf42c3}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a192ceacda3e8f5fa290fc355b7ad8472}{
+bool {\bfseries edgeExists} (const EdgeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a192ceacda3e8f5fa290fc355b7ad8472}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a2902a1b6ff9943ca48c558e8e003fe6c}{
+bool {\bfseries nodeExists} (const NodeDescriptor \&descriptor)}
+\label{class_adjacency_vector_impl_a2902a1b6ff9943ca48c558e8e003fe6c}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_a04d42af33bd0c1917c23c939f2fe5a2d}{
+const NodeIterator \& {\bfseries nilNode} ()}
+\label{class_adjacency_vector_impl_a04d42af33bd0c1917c23c939f2fe5a2d}
+
+\item 
+\hypertarget{class_adjacency_vector_impl_ad8fb77aaced9f2ba4b1d45ce6fe54171}{
+const EdgeIterator \& {\bfseries nilEdge} ()}
+\label{class_adjacency_vector_impl_ad8fb77aaced9f2ba4b1d45ce6fe54171}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Vtype, typename Etype$>$ class AdjacencyVectorImpl$<$ Vtype, Etype $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/adjacencyVectorImpl.h\end{DoxyCompactItemize}

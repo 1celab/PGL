@@ -1,0 +1,70 @@
+# Graph sizes (and other info) for the DIMACS 9 and DIMACS 10 graphs we used.
+#
+# For the experiments we only used the FLA, LKS, E, W, belgium, 
+# netherlands and germany graphs. We have included the NY and luxembourg 
+# graphs because, due to their size, they are suitable for quick tests.
+#
+# We refer to the graphs using their map-name abbreviations.
+#
+#
+#
+# 1) Graph sizes and map names.
+#
+# Each line contains information for one graph (map). 
+# Lines are of the following form:
+# map-name number-of-nodes number-of-edges "full-name"
+#
+# DIMACS 9:
+#
+NY            264346    733846      "New York City"
+FLA           1070376   2712798     "Florida"
+LKS           2758119   6885658     "Great Lakes"
+E             3598623   8778114     "Eastern USA"
+W             6262104   15248146    "Western USA"
+#
+# DIMACS 10:
+#
+luxembourg    114599     119666     "Luxembourg"
+belgium       1441295    1549970    "Belgium"
+netherlands   2216688    2441238    "Netherlands"
+germany       11548845   12369181   "Germany"
+#
+#
+#
+# 2) Files representing each graph.
+#
+# Each line contains information for one graph (map).
+#
+# DIMACS 9:
+#
+# Lines are of the following form:
+# map-name distances-filename travel-times-filename coordinates-filename
+#
+NY            USA-road-d.NY.gr    USA-road-t.NY.gr    USA-road-d.NY.co
+FLA           USA-road-d.FLA.gr   USA-road-t.FLA.gr   USA-road-d.FLA.co
+LKS           USA-road-d.LKS.gr   USA-road-t.LKS.gr   USA-road-d.LKS.co
+E             USA-road-d.E.gr     USA-road-t.E.gr     USA-road-d.E.co
+W             USA-road-d.W.gr     USA-road-t.W.gr     USA-road-d.W.co
+#
+# DIMACS 10:
+#
+# Lines are of the following form:
+# map-name graph-filename coordinates-filename
+#
+luxembourg    luxembourg.osm.graph    luxembourg.osm.xyz
+belgium       belgium.osm.graph       belgium.osm.xyz
+netherlands   netherlands.osm.graph   netherlands.osm.xyz
+germany       germany.osm.graph       germany.osm.xyz
+#
+#
+#
+# 3) More graphs.
+#
+# You can also use other DIMACS 9 or DIMACS 10 graphs. To do so, just 
+# download the relevant files, put them in this folder and use their 
+# unique identifiers as a map-name. For example, for the Asia DIMACS 10 
+# graph (with files asia.osm.graph and asia.osm.xyz) you should use "asia"
+# as the map-name. As another example, for the Colorado DIMACS 9 graph 
+# (with files USA-road-d.COL.gr, USA-road-d-COL.co and USA-road-t-COL.gr) 
+# you should use "COL" as the map-name.
+#

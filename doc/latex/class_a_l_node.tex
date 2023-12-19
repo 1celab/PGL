@@ -1,0 +1,71 @@
+\hypertarget{class_a_l_node}{
+\section{ALNode$<$ Vtype, Etype $>$ Class Template Reference}
+\label{class_a_l_node}\index{ALNode@{ALNode}}
+}
+
+
+Inherits \hyperlink{class_graph_element}{GraphElement$<$ Vtype, AdjacencyListImpl$<$ Vtype, Etype $>$::NodeDescriptor $>$}.
+
+
+
+Collaboration diagram for ALNode$<$ Vtype, Etype $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_a_l_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_l_node_a789aea75e25b92b20a144adb0e9dc64b}{
+typedef \hyperlink{class_adjacency_list_impl}{AdjacencyListImpl}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$::NodeDescriptor {\bfseries NodeDescriptor}}
+\label{class_a_l_node_a789aea75e25b92b20a144adb0e9dc64b}
+
+\item 
+\hypertarget{class_a_l_node_af583e17ec3b852f4524f6f5ef695873b}{
+typedef std::list$<$ \hyperlink{class_a_l_edge}{ALEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries iterator}}
+\label{class_a_l_node_af583e17ec3b852f4524f6f5ef695873b}
+
+\item 
+\hypertarget{class_a_l_node_ae7bc0dd6b479187e9800a6d0756778ba}{
+typedef std::list$<$ \hyperlink{class_a_l_in_edge}{ALInEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries backIterator}}
+\label{class_a_l_node_ae7bc0dd6b479187e9800a6d0756778ba}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_l_node_a3131171c179e3556dbb77df163d859de}{
+{\bfseries ALNode} (NodeDescriptor descriptor)}
+\label{class_a_l_node_a3131171c179e3556dbb77df163d859de}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_l_node_a6e597f8610602774abd587d0839f3013}{
+static unsigned int {\bfseries memUsage} ()}
+\label{class_a_l_node_a6e597f8610602774abd587d0839f3013}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_a_l_node_af00fd390c132316c5becc1097607c5c5}{
+std::list$<$ \hyperlink{class_a_l_edge}{ALEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$ {\bfseries m\_\-edges}}
+\label{class_a_l_node_af00fd390c132316c5becc1097607c5c5}
+
+\item 
+\hypertarget{class_a_l_node_ae3053593d7252de59c97630d7f9e9c8a}{
+std::list$<$ \hyperlink{class_a_l_in_edge}{ALInEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$ {\bfseries m\_\-InEdges}}
+\label{class_a_l_node_ae3053593d7252de59c97630d7f9e9c8a}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Vtype, typename Etype$>$ class ALNode$<$ Vtype, Etype $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/adjacencyListImpl.h\end{DoxyCompactItemize}

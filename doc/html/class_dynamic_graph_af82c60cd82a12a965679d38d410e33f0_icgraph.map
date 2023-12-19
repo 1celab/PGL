@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_dynamic_graph.html#aaf6cb65860223b369ca8a07fb59806cc" title="Erases a node from the graph." alt="" coords="499,61,675,91"/>
+<area shape="rect" href="$class_dynamic_graph.html#a6e135b79a187771dfde069b5277b1f88" title="Returns an iterator to an outgoing edge." alt="" coords="243,33,445,63"/>
+<area shape="rect" href="$class_dynamic_graph.html#a67dcf2352cfd2eb25141301f4362e88f" title="Checks if an edge exists in the graph." alt="" coords="261,87,427,116"/>
+<area shape="rect" href="$class_dynamic_graph.html#af9c2a597b80be5d539b085eb926ffec9" title="Checks if all outgoing edges are paired to an incoming edge each." alt="" coords="239,140,449,169"/>
+</map>

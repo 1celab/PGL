@@ -1,0 +1,279 @@
+\hypertarget{class_packed_memory_array_impl}{
+\section{PackedMemoryArrayImpl$<$ Vtype, Etype $>$ Class Template Reference}
+\label{class_packed_memory_array_impl}\index{PackedMemoryArrayImpl@{PackedMemoryArrayImpl}}
+}
+
+
+Collaboration diagram for PackedMemoryArrayImpl$<$ Vtype, Etype $>$:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=400pt]{class_packed_memory_array_impl__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_memory_array_impl_a89e85c81f9ef46f5703bd3052c3f9bc5}{
+typedef unsigned int {\bfseries SizeType}}
+\label{class_packed_memory_array_impl_a89e85c81f9ef46f5703bd3052c3f9bc5}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a0375a23c81447f99bbb2ce3ce2a763a1}{
+typedef \hyperlink{class_p_m_a_node}{PMANode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$$\ast$ {\bfseries NodeDescriptor}}
+\label{class_packed_memory_array_impl_a0375a23c81447f99bbb2ce3ce2a763a1}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a9a79ef4e91200a14e9ddef51f004c350}{
+typedef \hyperlink{class_p_m_a_edge}{PMAEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$$\ast$ {\bfseries EdgeDescriptor}}
+\label{class_packed_memory_array_impl_a9a79ef4e91200a14e9ddef51f004c350}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a9b0f9796c4db3b50772952b7e66e424c}{
+typedef \hyperlink{class_packed_memory_array}{PackedMemoryArray}$<$ \hyperlink{class_p_m_a_node}{PMANode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::Iterator {\bfseries NodeIterator}}
+\label{class_packed_memory_array_impl_a9b0f9796c4db3b50772952b7e66e424c}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a3700b9d05ba9c5b8aac31d88c7b83cb3}{
+typedef \hyperlink{class_packed_memory_array}{PackedMemoryArray}$<$ \hyperlink{class_p_m_a_edge}{PMAEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::Iterator {\bfseries EdgeIterator}}
+\label{class_packed_memory_array_impl_a3700b9d05ba9c5b8aac31d88c7b83cb3}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a7d28674d20053b9cc3b5ffcb11fee483}{
+typedef \hyperlink{class_packed_memory_array}{PackedMemoryArray}$<$ \hyperlink{class_p_m_a_in_edge}{PMAInEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::Iterator {\bfseries InEdgeIterator}}
+\label{class_packed_memory_array_impl_a7d28674d20053b9cc3b5ffcb11fee483}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_memory_array_impl_a3ce2025a4671f367cd14bcc8f222c7bd}{
+\hyperlink{class_p_m_a_node}{NodeDescriptor} {\bfseries insertNode} ()}
+\label{class_packed_memory_array_impl_a3ce2025a4671f367cd14bcc8f222c7bd}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_aa03bb8c1723c757c1842d292af619502}{
+\hyperlink{class_p_m_a_edge}{EdgeDescriptor} {\bfseries insertEdge} (const \hyperlink{class_p_m_a_node}{NodeDescriptor} \&uD, const \hyperlink{class_p_m_a_node}{NodeDescriptor} \&vD)}
+\label{class_packed_memory_array_impl_aa03bb8c1723c757c1842d292af619502}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ad10e5616f6aef2b449eaf4585ce726af}{
+void {\bfseries eraseNode} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_ad10e5616f6aef2b449eaf4585ce726af}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a17d0e06d2149ee497456a8e4a9c6d1e6}{
+void {\bfseries eraseEdge} (const \hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} \&k)}
+\label{class_packed_memory_array_impl_a17d0e06d2149ee497456a8e4a9c6d1e6}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_af2bc9a26e0e4a345a008856c64b27cab}{
+void {\bfseries eraseEdge} (const \hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} \&e)}
+\label{class_packed_memory_array_impl_af2bc9a26e0e4a345a008856c64b27cab}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a6fd81f7eb93aa31c2ef265465f28fff2}{
+NodeIterator {\bfseries beginNodes} ()}
+\label{class_packed_memory_array_impl_a6fd81f7eb93aa31c2ef265465f28fff2}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a4834b776c492d5b30ef511e8f0fc2b90}{
+NodeIterator {\bfseries endNodes} ()}
+\label{class_packed_memory_array_impl_a4834b776c492d5b30ef511e8f0fc2b90}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a9fa86225956b6e669497807eecda1556}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries beginEdges} ()}
+\label{class_packed_memory_array_impl_a9fa86225956b6e669497807eecda1556}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_aa587edef412d5be5542b7b69a1f2faaa}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries endEdges} ()}
+\label{class_packed_memory_array_impl_aa587edef412d5be5542b7b69a1f2faaa}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_aeb7d8be80c5c1b4ebdf27ac81647c285}{
+NodeIterator {\bfseries findFirstNodeWithEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_aeb7d8be80c5c1b4ebdf27ac81647c285}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ada8cd241ced1c2bc5599b8259c92aa5f}{
+NodeIterator {\bfseries findFirstNodeWithInEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_ada8cd241ced1c2bc5599b8259c92aa5f}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ac3b49a80de43cab0c622d9ec596b12e7}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries beginEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_ac3b49a80de43cab0c622d9ec596b12e7}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a43e57d8a0d583e31178bff8efb41bd62}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries endEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_a43e57d8a0d583e31178bff8efb41bd62}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a3666ba6740e383b260499e62eb4ffc28}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} {\bfseries beginInEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_a3666ba6740e383b260499e62eb4ffc28}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a579e2a3111d35867af90af9aa0f9c841}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} {\bfseries endInEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_a579e2a3111d35867af90af9aa0f9c841}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ab00bf7a3fffb30b3c4f1f18762ad0add}{
+NodeIterator {\bfseries chooseNode} ()}
+\label{class_packed_memory_array_impl_ab00bf7a3fffb30b3c4f1f18762ad0add}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a4a68e3b51d81312f9c496b12dddbf75b}{
+NodeIterator {\bfseries getNodeIterator} (const \hyperlink{class_p_m_a_node}{NodeDescriptor} \&descriptor)}
+\label{class_packed_memory_array_impl_a4a68e3b51d81312f9c496b12dddbf75b}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ab8eddc3878404002a185db79eefaff23}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries getEdgeIteratorAtIndex} (const SizeType \&position)}
+\label{class_packed_memory_array_impl_ab8eddc3878404002a185db79eefaff23}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_acc901ab81276e1a8fba469ae491b457f}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries getEdgeIteratorAtAddress} (\hyperlink{class_p_m_a_edge}{PMAEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$addr)}
+\label{class_packed_memory_array_impl_acc901ab81276e1a8fba469ae491b457f}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ae7fe105cd4c86ec1be64ac3a6434bff8}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} {\bfseries getInEdgeIteratorAtIndex} (const SizeType \&position)}
+\label{class_packed_memory_array_impl_ae7fe105cd4c86ec1be64ac3a6434bff8}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a458998bfab6ab300357b7a768fe36ffc}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} {\bfseries getInEdgeIteratorAtAddress} (\hyperlink{class_p_m_a_in_edge}{PMAInEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$addr)}
+\label{class_packed_memory_array_impl_a458998bfab6ab300357b7a768fe36ffc}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a8a5db569449270ab60bdcb4f5063283b}{
+NodeIterator {\bfseries getNodeIterator} (const SizeType \&position)}
+\label{class_packed_memory_array_impl_a8a5db569449270ab60bdcb4f5063283b}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ac92bbcbc341d72f79d00166ee858ea3f}{
+NodeIterator {\bfseries getNodeIterator} (\hyperlink{class_p_m_a_edge}{PMAEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $\ast$addr)}
+\label{class_packed_memory_array_impl_ac92bbcbc341d72f79d00166ee858ea3f}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a82c4d087eca5b38de0287fd560342995}{
+NodeIterator {\bfseries getAdjacentNodeIterator} (const \hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} \&e)}
+\label{class_packed_memory_array_impl_a82c4d087eca5b38de0287fd560342995}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a06324c5923bca1898e40f743a9885c4b}{
+NodeIterator {\bfseries getAdjacentNodeIterator} (const \hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} \&k)}
+\label{class_packed_memory_array_impl_a06324c5923bca1898e40f743a9885c4b}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a2a6596fa94234d58e8903845ee1563e4}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} {\bfseries getInEdgeIterator} (const \hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} \&e)}
+\label{class_packed_memory_array_impl_a2a6596fa94234d58e8903845ee1563e4}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ad21ed5f77d58e50d7388146aa19ead4c}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries getEdgeIterator} (const \hyperlink{class_packed_memory_array_1_1_iterator}{InEdgeIterator} \&k)}
+\label{class_packed_memory_array_impl_ad21ed5f77d58e50d7388146aa19ead4c}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a44b445a7fd2278a40e523643578c1244}{
+bool {\bfseries hasEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_a44b445a7fd2278a40e523643578c1244}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a88ac3421f6711d1ec79c038265b7f903}{
+bool {\bfseries hasInEdges} (const NodeIterator \&u)}
+\label{class_packed_memory_array_impl_a88ac3421f6711d1ec79c038265b7f903}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_af11ff382346c6fb7d94a0d0353b9a5c2}{
+bool {\bfseries hasEdge} (const \hyperlink{class_p_m_a_edge}{EdgeDescriptor} \&descriptor)}
+\label{class_packed_memory_array_impl_af11ff382346c6fb7d94a0d0353b9a5c2}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a585c53f8c1f1c7de701abd48f9eff825}{
+bool {\bfseries hasNode} (const \hyperlink{class_p_m_a_node}{NodeDescriptor} \&descriptor)}
+\label{class_packed_memory_array_impl_a585c53f8c1f1c7de701abd48f9eff825}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a4118feccd3f1933fb8b680eed6a12ef2}{
+NodeIterator {\bfseries nilNode} ()}
+\label{class_packed_memory_array_impl_a4118feccd3f1933fb8b680eed6a12ef2}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_afea38878af1872045d1eadd0f78b4f3f}{
+\hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} {\bfseries nilEdge} ()}
+\label{class_packed_memory_array_impl_afea38878af1872045d1eadd0f78b4f3f}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a39da32b8de7b6c45bc64b9479f7d3934}{
+bool {\bfseries isValid} ()}
+\label{class_packed_memory_array_impl_a39da32b8de7b6c45bc64b9479f7d3934}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a7a3dc566573124c9cc52fdbf36d1a039}{
+SizeType {\bfseries memUsage} ()}
+\label{class_packed_memory_array_impl_a7a3dc566573124c9cc52fdbf36d1a039}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_aabffdf31e9d825f20d4c79059cd0ca85}{
+SizeType {\bfseries getId} (const NodeIterator \&u) const }
+\label{class_packed_memory_array_impl_aabffdf31e9d825f20d4c79059cd0ca85}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ac319690e52bd5798a0527f3578da1646}{
+\hyperlink{class_p_m_a_node}{NodeDescriptor} {\bfseries getDescriptor} (const NodeIterator \&u) const }
+\label{class_packed_memory_array_impl_ac319690e52bd5798a0527f3578da1646}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a711355cc4f23ea3b2db474c238229e78}{
+\hyperlink{class_p_m_a_edge}{EdgeDescriptor} {\bfseries getDescriptor} (const \hyperlink{class_packed_memory_array_1_1_iterator}{EdgeIterator} \&e) const }
+\label{class_packed_memory_array_impl_a711355cc4f23ea3b2db474c238229e78}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_acb60dbb084aa0b9cf541a926a61d62b2}{
+void {\bfseries printDot} (std::ostream \&out)}
+\label{class_packed_memory_array_impl_acb60dbb084aa0b9cf541a926a61d62b2}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a6c25b42a664e5b8b5c4bb832436bc3a6}{
+void {\bfseries reserve} (const SizeType \&numNodes, const SizeType \&numEdges)}
+\label{class_packed_memory_array_impl_a6c25b42a664e5b8b5c4bb832436bc3a6}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_aed958a080f8c42ae8f290849a6c20a5c}{
+void {\bfseries clear} ()}
+\label{class_packed_memory_array_impl_aed958a080f8c42ae8f290849a6c20a5c}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_memory_array_impl_ab45e5dc3b78897d254e7a5dbad23a7e1}{
+class \hyperlink{class_packed_memory_array_impl_ab45e5dc3b78897d254e7a5dbad23a7e1}{PMANodeObserver$<$ Vtype, Etype $>$}}
+\label{class_packed_memory_array_impl_ab45e5dc3b78897d254e7a5dbad23a7e1}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_ab65cc43b0805c58e68fe083b9fdf0bfd}{
+class \hyperlink{class_packed_memory_array_impl_ab65cc43b0805c58e68fe083b9fdf0bfd}{PMAEdgeObserver$<$ Vtype, Etype $>$}}
+\label{class_packed_memory_array_impl_ab65cc43b0805c58e68fe083b9fdf0bfd}
+
+\item 
+\hypertarget{class_packed_memory_array_impl_a44f58775821887f50ba75d3ba8337e84}{
+class \hyperlink{class_packed_memory_array_impl_a44f58775821887f50ba75d3ba8337e84}{PMAInEdgeObserver$<$ Vtype, Etype $>$}}
+\label{class_packed_memory_array_impl_a44f58775821887f50ba75d3ba8337e84}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Vtype, typename Etype$>$ class PackedMemoryArrayImpl$<$ Vtype, Etype $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/packedMemoryArrayImpl.h\end{DoxyCompactItemize}

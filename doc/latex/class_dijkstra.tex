@@ -1,0 +1,85 @@
+\hypertarget{class_dijkstra}{
+\section{Dijkstra$<$ GraphType $>$ Class Template Reference}
+\label{class_dijkstra}\index{Dijkstra@{Dijkstra}}
+}
+
+
+Plain \hyperlink{class_dijkstra}{Dijkstra} algorithm implementation.  
+
+
+
+
+{\ttfamily \#include $<$dijkstra.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dijkstra_a51febd724adf95d1a00e34107febc6d1}{Dijkstra} (GraphType \&graph, unsigned int $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+void \hyperlink{class_dijkstra_a8d71229d80ea19a2ad9b40129060954d}{buildTree} (const typename GraphType::NodeIterator \&s)
+\begin{DoxyCompactList}\small\item\em Builds a shortest path tree routed on a source node. \item\end{DoxyCompactList}\item 
+WeightType \hyperlink{class_dijkstra_a61e3b4e7447de9ab59aeb47408e04c3a}{runQuery} (const typename GraphType::NodeIterator \&s, const typename GraphType::NodeIterator \&t)
+\begin{DoxyCompactList}\small\item\em Runs a shortest path query between a source node s and a target node t. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class GraphType$>$ class Dijkstra$<$ GraphType $>$}
+
+Plain \hyperlink{class_dijkstra}{Dijkstra} algorithm implementation. This class supports building a full shortest path tree from a source node s, or running queries between source and target nodes
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em GraphType}]The type of the graph to run the algorithm on \end{DoxyTemplParams}
+\begin{DoxyAuthor}{Author}
+Panos Michail 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_dijkstra_a51febd724adf95d1a00e34107febc6d1}{
+\index{Dijkstra@{Dijkstra}!Dijkstra@{Dijkstra}}
+\index{Dijkstra@{Dijkstra}!Dijkstra@{Dijkstra}}
+\subsubsection[{Dijkstra}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ {\bf Dijkstra}$<$ GraphType $>$::{\bf Dijkstra} (GraphType \& {\em graph}, \/  unsigned int $\ast$ {\em timestamp})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dijkstra_a51febd724adf95d1a00e34107febc6d1}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em graph}]The graph to run the algorithm on \item[{\em timestamp}]An address containing a timestamp. A timestamp must be given in order to check whether a node is visited or not \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_dijkstra_a8d71229d80ea19a2ad9b40129060954d}{
+\index{Dijkstra@{Dijkstra}!buildTree@{buildTree}}
+\index{buildTree@{buildTree}!Dijkstra@{Dijkstra}}
+\subsubsection[{buildTree}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ void {\bf Dijkstra}$<$ GraphType $>$::buildTree (const typename GraphType::NodeIterator \& {\em s})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dijkstra_a8d71229d80ea19a2ad9b40129060954d}
+
+
+Builds a shortest path tree routed on a source node. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]The source node \end{DoxyParams}
+\hypertarget{class_dijkstra_a61e3b4e7447de9ab59aeb47408e04c3a}{
+\index{Dijkstra@{Dijkstra}!runQuery@{runQuery}}
+\index{runQuery@{runQuery}!Dijkstra@{Dijkstra}}
+\subsubsection[{runQuery}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ WeightType {\bf Dijkstra}$<$ GraphType $>$::runQuery (const typename GraphType::NodeIterator \& {\em s}, \/  const typename GraphType::NodeIterator \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_dijkstra_a61e3b4e7447de9ab59aeb47408e04c3a}
+
+
+Runs a shortest path query between a source node s and a target node t. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]The source node \item[{\em t}]The target node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance of the target node 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Algorithms/ShortestPath/dijkstra.h\end{DoxyCompactItemize}

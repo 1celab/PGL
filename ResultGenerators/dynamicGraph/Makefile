@@ -1,0 +1,31 @@
+INCLUDEDIR= $(HOME)/Projects/pgl/include
+BOOSTINCLUDEDIR='/usr/local/include'
+BOOSTLIBDIR='/usr/local/lib'
+
+all: compile
+
+compile:
+	g++ dynamicGraph.cpp -O3 -I$(INCLUDEDIR) -I$(BOOSTINCLUDEDIR) -L$(BOOSTLIBDIR) -DNDEBUG -lboost_program_options
+
+
+debug:
+	g++ dynamicGraph.cpp -O0 -g -I$(INCLUDEDIR) -I$(BOOSTINCLUDEDIR) -L$(BOOSTLIBDIR) -Wall -lboost_program_options -DMEMSTATS
+	
+debug-noassert:
+	g++ dynamicGraph.cpp -O0 -g -I$(INCLUDEDIR) -I$(BOOSTINCLUDEDIR) -L$(BOOSTLIBDIR) -Wall -lboost_program_options -DNDEBUG
+
+stats:
+	g++ dynamicGraph.cpp -O3 -I$(INCLUDEDIR) -I$(BOOSTINCLUDEDIR) -L$(BOOSTLIBDIR) -DNDEBUG -lboost_program_options -DMEMSTATS
+
+run:
+	./a.out
+
+valgrind:
+	valgrind --leak-check=full ./a.out -s 10
+
+profile: debug
+	valgrind --tool=callgrind --callgrind-out-file=profile  ./a.out -s 10
+	kcachegrind profile &
+
+clean: 
+	rm *.out *.dot *.svg 

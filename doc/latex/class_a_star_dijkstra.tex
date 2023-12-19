@@ -1,0 +1,88 @@
+\hypertarget{class_a_star_dijkstra}{
+\section{AStarDijkstra$<$ GraphType $>$ Class Template Reference}
+\label{class_a_star_dijkstra}\index{AStarDijkstra@{AStarDijkstra}}
+}
+
+
+The A$\ast$ Variant of Dijkstra's algorithm using cartesian distances.  
+
+
+
+
+{\ttfamily \#include $<$aStarDijkstra.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_a_star_dijkstra_a3537728567fd96dd0e934e953de24a9a}{AStarDijkstra} (GraphType \&graph, unsigned int $\ast$timestamp)
+\begin{DoxyCompactList}\small\item\em Constructor. \item\end{DoxyCompactList}\item 
+bool \hyperlink{class_a_star_dijkstra_a382abeb0b9328f55ce3ecf21e5c937d8}{hasFeasiblePotentials} (const typename GraphType::NodeIterator \&t)
+\begin{DoxyCompactList}\small\item\em Checks if the graph has feasible potentials. \item\end{DoxyCompactList}\item 
+WeightType \hyperlink{class_a_star_dijkstra_a8a11eb938a4608e119e6fb8ebd82e097}{runQuery} (const typename GraphType::NodeIterator \&s, const typename GraphType::NodeIterator \&t)
+\begin{DoxyCompactList}\small\item\em Runs a shortest path query between a source node s and a target node t. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class GraphType$>$ class AStarDijkstra$<$ GraphType $>$}
+
+The A$\ast$ Variant of Dijkstra's algorithm using cartesian distances. This class supports running queries between source and target nodes
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+\item[{\em GraphType}]The type of the graph to run the algorithm on \end{DoxyTemplParams}
+\begin{DoxyAuthor}{Author}
+Panos Michail 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_a_star_dijkstra_a3537728567fd96dd0e934e953de24a9a}{
+\index{AStarDijkstra@{AStarDijkstra}!AStarDijkstra@{AStarDijkstra}}
+\index{AStarDijkstra@{AStarDijkstra}!AStarDijkstra@{AStarDijkstra}}
+\subsubsection[{AStarDijkstra}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ {\bf AStarDijkstra}$<$ GraphType $>$::{\bf AStarDijkstra} (GraphType \& {\em graph}, \/  unsigned int $\ast$ {\em timestamp})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_a_star_dijkstra_a3537728567fd96dd0e934e953de24a9a}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em graph}]The graph to run the algorithm on \item[{\em timestamp}]An address containing a timestamp. A timestamp must be given in order to check whether a node is visited or not \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_a_star_dijkstra_a382abeb0b9328f55ce3ecf21e5c937d8}{
+\index{AStarDijkstra@{AStarDijkstra}!hasFeasiblePotentials@{hasFeasiblePotentials}}
+\index{hasFeasiblePotentials@{hasFeasiblePotentials}!AStarDijkstra@{AStarDijkstra}}
+\subsubsection[{hasFeasiblePotentials}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ bool {\bf AStarDijkstra}$<$ GraphType $>$::hasFeasiblePotentials (const typename GraphType::NodeIterator \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_a_star_dijkstra_a382abeb0b9328f55ce3ecf21e5c937d8}
+
+
+Checks if the graph has feasible potentials. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em t}]The target node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the potentials are feasible, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_a_star_dijkstra_a8a11eb938a4608e119e6fb8ebd82e097}{
+\index{AStarDijkstra@{AStarDijkstra}!runQuery@{runQuery}}
+\index{runQuery@{runQuery}!AStarDijkstra@{AStarDijkstra}}
+\subsubsection[{runQuery}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class GraphType $>$ WeightType {\bf AStarDijkstra}$<$ GraphType $>$::runQuery (const typename GraphType::NodeIterator \& {\em s}, \/  const typename GraphType::NodeIterator \& {\em t})\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{class_a_star_dijkstra_a8a11eb938a4608e119e6fb8ebd82e097}
+
+
+Runs a shortest path query between a source node s and a target node t. 
+
+
+\begin{DoxyParams}{Parameters}
+\item[{\em s}]The source node \item[{\em t}]The target node \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The distance of the target node 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Algorithms/ShortestPath/aStarDijkstra.h\end{DoxyCompactItemize}

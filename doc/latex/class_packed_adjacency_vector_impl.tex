@@ -1,0 +1,132 @@
+\hypertarget{class_packed_adjacency_vector_impl}{
+\section{PackedAdjacencyVectorImpl$<$ Vtype, Etype $>$ Class Template Reference}
+\label{class_packed_adjacency_vector_impl}\index{PackedAdjacencyVectorImpl@{PackedAdjacencyVectorImpl}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_af8e8384d80ee22887d846863db530ae4}{
+typedef unsigned int {\bfseries SizeType}}
+\label{class_packed_adjacency_vector_impl_af8e8384d80ee22887d846863db530ae4}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ab0feb6b2198e48ec324d428f69622480}{
+typedef std::vector$<$ \hyperlink{class_p_a_v_node}{PAVNode}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries NodeIterator}}
+\label{class_packed_adjacency_vector_impl_ab0feb6b2198e48ec324d428f69622480}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ac52fee9554bd7f812d4adb7fe47b7818}{
+typedef std::vector$<$ \hyperlink{class_p_a_v_edge}{PAVEdge}$<$ \hyperlink{class_vtype}{Vtype}, \hyperlink{class_etype}{Etype} $>$ $>$::iterator {\bfseries EdgeIterator}}
+\label{class_packed_adjacency_vector_impl_ac52fee9554bd7f812d4adb7fe47b7818}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ad2545aa75362635c9a0829d9ab237a99}{
+typedef SizeType $\ast$ {\bfseries NodeDescriptor}}
+\label{class_packed_adjacency_vector_impl_ad2545aa75362635c9a0829d9ab237a99}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a26ae4d6227d945afa207144a53d3b3c1}{
+typedef SizeType $\ast$ {\bfseries EdgeDescriptor}}
+\label{class_packed_adjacency_vector_impl_a26ae4d6227d945afa207144a53d3b3c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a6ebc3b1dca713ad5e38dabe15aedc3d8}{
+{\bfseries AdjacencyVectorImpl} ()}
+\label{class_packed_adjacency_vector_impl_a6ebc3b1dca713ad5e38dabe15aedc3d8}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_aec2489b5086032a36cdeec01568383be}{
+const NodeDescriptor \& {\bfseries insertNode} ()}
+\label{class_packed_adjacency_vector_impl_aec2489b5086032a36cdeec01568383be}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_aa3274efd1814c0ec47285ab525badde0}{
+const EdgeDescriptor \& {\bfseries insertEdge} (const NodeDescriptor \&uD, const NodeDescriptor \&vD)}
+\label{class_packed_adjacency_vector_impl_aa3274efd1814c0ec47285ab525badde0}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ab93b0b91198d9f6209c9d66f40254878}{
+void {\bfseries eraseNode} (NodeDescriptor descriptor)}
+\label{class_packed_adjacency_vector_impl_ab93b0b91198d9f6209c9d66f40254878}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ac3b4b93ab592ed562cb242cdaa7803c4}{
+void {\bfseries eraseEdge} (EdgeDescriptor descriptor)}
+\label{class_packed_adjacency_vector_impl_ac3b4b93ab592ed562cb242cdaa7803c4}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_aa0a17d759cfd1c2888a7f6b8c37aa23c}{
+void {\bfseries sanitiseNode} (const NodeIterator \&u)}
+\label{class_packed_adjacency_vector_impl_aa0a17d759cfd1c2888a7f6b8c37aa23c}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ae54afed7e1d107a194399ea7419d792d}{
+const NodeIterator \& {\bfseries beginNodes} ()}
+\label{class_packed_adjacency_vector_impl_ae54afed7e1d107a194399ea7419d792d}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a53d902f406eb55d478096970ffa2258e}{
+const NodeIterator \& {\bfseries endNodes} ()}
+\label{class_packed_adjacency_vector_impl_a53d902f406eb55d478096970ffa2258e}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_af860001af9a731293d9acc04992a214a}{
+const EdgeIterator \& {\bfseries beginEdges} (NodeIterator u)}
+\label{class_packed_adjacency_vector_impl_af860001af9a731293d9acc04992a214a}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_aab1cb48186fa7e4e09fec2b6fe483797}{
+const EdgeIterator \& {\bfseries endEdges} (NodeIterator u)}
+\label{class_packed_adjacency_vector_impl_aab1cb48186fa7e4e09fec2b6fe483797}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_ac8ef218f084cb379b742c536f1bcc115}{
+const EdgeIterator \& {\bfseries beginBackEdges} (NodeIterator u)}
+\label{class_packed_adjacency_vector_impl_ac8ef218f084cb379b742c536f1bcc115}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_aef7cc1c52c539cf506c0a1259f3d387e}{
+const EdgeIterator \& {\bfseries endBackEdges} (NodeIterator u)}
+\label{class_packed_adjacency_vector_impl_aef7cc1c52c539cf506c0a1259f3d387e}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a56063f4b8cb0ed51b5738d94b36cbb75}{
+const NodeIterator \& {\bfseries chooseNode} ()}
+\label{class_packed_adjacency_vector_impl_a56063f4b8cb0ed51b5738d94b36cbb75}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a426d0de6a4b87e768f1c8df02b106a48}{
+const EdgeIterator \& {\bfseries getEdgeIterator} (const EdgeDescriptor \&descriptor)}
+\label{class_packed_adjacency_vector_impl_a426d0de6a4b87e768f1c8df02b106a48}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a70ac4b180d21d6f5005e31bbf6b5fbbd}{
+const NodeIterator \& {\bfseries getNodeIterator} (const NodeDescriptor \&descriptor)}
+\label{class_packed_adjacency_vector_impl_a70ac4b180d21d6f5005e31bbf6b5fbbd}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a0d9370488c2c68898ae0cf5294a9afb5}{
+const NodeIterator \& {\bfseries getOppositeNodeIterator} (const EdgeIterator \&e)}
+\label{class_packed_adjacency_vector_impl_a0d9370488c2c68898ae0cf5294a9afb5}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a2b4b4f134e976b19781fdf4d79835e4a}{
+const NodeIterator \& {\bfseries nilNode} ()}
+\label{class_packed_adjacency_vector_impl_a2b4b4f134e976b19781fdf4d79835e4a}
+
+\item 
+\hypertarget{class_packed_adjacency_vector_impl_a0b6091ce461186ca523bb2476a6d599b}{
+const EdgeIterator \& {\bfseries nilEdge} ()}
+\label{class_packed_adjacency_vector_impl_a0b6091ce461186ca523bb2476a6d599b}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename Vtype, typename Etype$>$ class PackedAdjacencyVectorImpl$<$ Vtype, Etype $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Graphs/packedAdjacencyVectorImpl.h\end{DoxyCompactItemize}

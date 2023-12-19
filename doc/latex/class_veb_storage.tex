@@ -1,0 +1,67 @@
+\hypertarget{class_veb_storage}{
+\section{VebStorage$<$ DataType $>$ Class Template Reference}
+\label{class_veb_storage}\index{VebStorage@{VebStorage}}
+}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_veb_storage_a4555db788399f55f13fed4dfd7793a90}{
+typedef PriorityQueueSizeType {\bfseries SizeType}}
+\label{class_veb_storage_a4555db788399f55f13fed4dfd7793a90}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_veb_storage_a458ac0413b0a17213910705c5b61a940}{
+{\bfseries VebStorage} (DataType $\ast$pool, const SizeType \&height)}
+\label{class_veb_storage_a458ac0413b0a17213910705c5b61a940}
+
+\item 
+\hypertarget{class_veb_storage_a26f8e08ba94f2c4df5c66a7124cea647}{
+DataType $\ast$ {\bfseries getRootAddr} () const }
+\label{class_veb_storage_a26f8e08ba94f2c4df5c66a7124cea647}
+
+\item 
+\hypertarget{class_veb_storage_a402ded1716e7a481c0e216c9c6d07ec8}{
+DataType $\ast$ {\bfseries getBfsIndexAddress} (const SizeType \&bfsIndex)}
+\label{class_veb_storage_a402ded1716e7a481c0e216c9c6d07ec8}
+
+\item 
+\hypertarget{class_veb_storage_a2dcabb6b6922b5db8cc8ee1c7c41ecd0}{
+DataType $\ast$ {\bfseries getLeftChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_veb_storage_a2dcabb6b6922b5db8cc8ee1c7c41ecd0}
+
+\item 
+\hypertarget{class_veb_storage_a15bb5536c18540cb630cd2efdac833f3}{
+SizeType {\bfseries getMemoryUsage} () const }
+\label{class_veb_storage_a15bb5536c18540cb630cd2efdac833f3}
+
+\item 
+\hypertarget{class_veb_storage_ac2f847b4309d98a22f6d0a7316f1117b}{
+DataType $\ast$ {\bfseries getRightChildAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_veb_storage_ac2f847b4309d98a22f6d0a7316f1117b}
+
+\item 
+\hypertarget{class_veb_storage_a5dedc755305e9dd5ce8ca5d1fdb60ffd}{
+DataType $\ast$ {\bfseries getParentAddress} (DataType $\ast$ptr, const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_veb_storage_a5dedc755305e9dd5ce8ca5d1fdb60ffd}
+
+\item 
+\hypertarget{class_veb_storage_a300cc2398c5bd64cadef1c980f55ee70}{
+const SizeType \& {\bfseries getRightStep} (const SizeType bfsIndex, const SizeType height)}
+\label{class_veb_storage_a300cc2398c5bd64cadef1c980f55ee70}
+
+\item 
+\hypertarget{class_veb_storage_ac00abf35d63fbe4d79e2291503b11293}{
+const SizeType \& {\bfseries getLeftStep} (const SizeType \&bfsIndex, const SizeType \&height)}
+\label{class_veb_storage_ac00abf35d63fbe4d79e2291503b11293}
+
+\end{DoxyCompactItemize}
+\subsubsection*{template$<$typename DataType$>$ class VebStorage$<$ DataType $>$}
+
+
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+include/Structs/Trees/treeStorageSchemes.h\end{DoxyCompactItemize}

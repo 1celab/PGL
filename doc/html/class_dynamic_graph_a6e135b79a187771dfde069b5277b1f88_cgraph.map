@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" href="$class_dynamic_graph.html#af82c60cd82a12a965679d38d410e33f0" title="Returns the first outgoing edge of a node." alt="" coords="260,5,441,35"/>
+<area shape="rect" href="$class_dynamic_graph.html#a71a4d1b575bcccf1a189bc83ab3d1373" title="Returns the end to the container of the edges of a node." alt="" coords="265,59,436,88"/>
+<area shape="rect" href="$class_dynamic_graph.html#a44edd0e001007679e8ae257bb7341bed" title="Returns the target node of an outgoingedge." alt="" coords="277,112,424,141"/>
+</map>
