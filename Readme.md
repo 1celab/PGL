@@ -39,10 +39,6 @@ git clone https://vernon.ceid.upatras.gr:8000/root/PGL.git
 
 ## Source Code Documentation
 
-https://vernon.ceid.upatras.gr:8000/pgldoc/index.html
-
-
-
 
 ## Getting Started
 
